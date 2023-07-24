@@ -3,6 +3,7 @@ In this repository you can find the solution of some problems from SPOJ
 
 ### Index
 - [AGGRESSIVE_COWS](aggressive_cows.cpp)
+- [BUGLIFE](buglife.cpp)
 - [COCONUTS](coconuts.cpp)
 - [CONGRAPH](congraph.cpp)
 - [DISGRAPH](disgraph.cpp)
