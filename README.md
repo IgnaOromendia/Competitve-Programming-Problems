@@ -14,3 +14,5 @@ In this repository you can find the solution of some problems that I have solved
     - [TRAFFICN](spoj/trafficn.cpp)
 - CSES
     - [Planets and Kingdoms](cses/planets_and_kingdoms.cpp)
+- Codeforce
+    - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
