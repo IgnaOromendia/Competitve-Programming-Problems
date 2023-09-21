@@ -14,7 +14,7 @@ int num_bridges = 0;
 
 /// @param time_in = the time when we first visit v
 /// @param low     = the lowest tin of any node that is reachable from v
-/// for the node v,  low[v] = min(tin[v], tin[p] for all p that (v,p) is a back edge, low[u] for all (v,u) is a tree edge)
+/// for the node v,  low[v] = min(tin[v], tin[b] for all b that (v,b) is a back edge, low[u] for all (v,u) is a tree edge)
 
 // **** The edge (v,u) is a bridge if and only if low[u] > tin[v] ****
 
