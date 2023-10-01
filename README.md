@@ -21,3 +21,5 @@ In this repository you can find the solution of some problems that I have solved
     - [Round Trip](cses/round_trip.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
+- UVA
+    - [Shopaholic](uva/shopaholic.cpp)
