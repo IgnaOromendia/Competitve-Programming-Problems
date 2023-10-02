@@ -23,6 +23,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Shortest Routes II](cses/shortest_routes_ii.cpp)
     - [High Score](cses/high_score.cpp)
     - [Flight Discount](cses/flight_discount.cpp)
+    - [Cycle Finding](cses/cycle_finding.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
 - UVA
