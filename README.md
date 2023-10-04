@@ -27,7 +27,8 @@ In this repository you can find the solution of some problems that I have solved
     - [Cycle Finding](cses/cycle_finding.cpp)
     - [Flight Routes _Unsolved_](cses/flight_routes.cpp)
     - [Round Trip II](cses/round_trip_II.cpp)
-    - [Course schedule](cses/course_schedule.cpp)
+    - [Course Schedule](cses/course_schedule.cpp)
+    - [Longest Flight Route](cses/longest_flight_route.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
 - UVA
