@@ -15,7 +15,6 @@ long long mod(long long x) {
     long long m = 1000000007LL;
     long long result = x % m;
     return result;
-    //return result < 0 ? result + m : m;
 }
 
 int winning_routes(int v) {
