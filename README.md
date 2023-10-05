@@ -30,6 +30,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Course Schedule](cses/course_schedule.cpp)
     - [Longest Flight Route](cses/longest_flight_route.cpp)
     - [Game Routes](cses/game_routes.cpp)
+    - [Investigation](cses/investigation.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
 - UVA
