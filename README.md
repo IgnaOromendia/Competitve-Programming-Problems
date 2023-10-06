@@ -33,6 +33,8 @@ In this repository you can find the solution of some problems that I have solved
     - [Investigation](cses/investigation.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
+    - [Power grid](codeforce/power_grid.cpp)
 - UVA
     - [Shopaholic](uva/shopaholic.cpp)
     - [Oil deposit](uva/oil_deposit.cpp)
+    - [Unlock the lock](uva/unlock_the_lock.cpp)
