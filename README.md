@@ -35,3 +35,4 @@ In this repository you can find the solution of some problems that I have solved
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
 - UVA
     - [Shopaholic](uva/shopaholic.cpp)
+    - [Oil deposit](uva/oil_deposit.cpp)
