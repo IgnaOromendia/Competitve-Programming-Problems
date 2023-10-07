@@ -22,7 +22,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Round Trip](cses/round_trip.cpp)
     - [Shortest Routes I](cses/shortest_routes_i.cpp)
     - [Shortest Routes II](cses/shortest_routes_ii.cpp)
-    - [High Score _Unsolved_](cses/high_score.cpp)
+    - [High Score](cses/high_score.cpp)
     - [Flight Discount](cses/flight_discount.cpp)
     - [Cycle Finding](cses/cycle_finding.cpp)
     - [Flight Routes _Unsolved_](cses/flight_routes.cpp)
