@@ -36,6 +36,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Planet Cycles _Unsolved_](cses/graphs/plantes_cycles.cpp)
     - [Road Reparation](cses/graphs/road_reparation.cpp)
     - [Road Construction](cses/graphs/road_construction.cpp)
+    - [Flight Routes Check](cses/graphs/flight_routes_check.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
