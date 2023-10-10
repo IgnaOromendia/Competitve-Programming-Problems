@@ -18,7 +18,6 @@ In this repository you can find the solution of some problems that I have solved
     - [Building Teams](cses/graphs/building_teams.cpp)
     - [Counting Rooms](cses/graphs/counting_rooms.cpp)
     - [Message Route](cses/graphs/message_route.cpp)
-    - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp)
     - [Round Trip](cses/graphs/round_trip.cpp)
     - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp)
     - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp)
@@ -37,6 +36,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Road Reparation](cses/graphs/road_reparation.cpp)
     - [Road Construction](cses/graphs/road_construction.cpp)
     - [Flight Routes Check](cses/graphs/flight_routes_check.cpp)
+    - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
