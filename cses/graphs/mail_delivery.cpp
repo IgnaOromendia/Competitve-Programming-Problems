@@ -1,21 +1,23 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 
 using namespace std;
+using node = pair<int, int>;
 
 #define IMP "IMPOSSIBLE"
 
 int n, m;
-vector<vector<bool> > adj;
+vector<bool> marked_edge;
+vector<vector<node> > adj;
 vector<int> path;
 
-
-
+// O(m)
 void find_eulerian_path(int v) {
-    for(int u = 1; u <= n; u++) {
-        if (!adj[v][u]) continue;
-        adj[v][u] = adj[u][v] = false;
-        find_eulerian_path(u);
+    for(node &u: adj[v]) {
+        if(marked_edge[u.second]) continue;
+        marked_edge[u.second] = true;
+        find_eulerian_path(u.first);
     }
     path.push_back(v);
 }
@@ -23,16 +25,20 @@ void find_eulerian_path(int v) {
 int main() {
     cin >> n >> m;
 
-    adj.assign(n+1, vector<bool>(n+1, false));
+    adj.assign(n+1, vector<node>());
+    marked_edge.assign(m+1, false);
 
+    int j = 0;
     while(m--) {
         int v, u; cin >> v >> u;
-        adj[v][u] = adj[u][v] = true;
+        adj[v].push_back(make_pair(u,j));
+        adj[u].push_back(make_pair(v,j));
+        j++;
     }
 
     find_eulerian_path(1);
 
-    if (path.front() == path.back()) {
+    if (path[0] == path[path.size()-1] and path.size()-1 == marked_edge.size()-1) {
         for(int i = 0; i < path.size(); i++) {
             cout << path[i] << " ";
         }
