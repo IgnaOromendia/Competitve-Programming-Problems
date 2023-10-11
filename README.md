@@ -37,6 +37,8 @@ In this repository you can find the solution of some problems that I have solved
     - [Road Construction](cses/graphs/road_construction.cpp)
     - [Flight Routes Check](cses/graphs/flight_routes_check.cpp)
     - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp)
+    - [Giant Pizza _Unsolved_](cses/graphs/giant_pizza.cpp)
+    - [Coin Collector](cses/graphs/coin_collector.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
