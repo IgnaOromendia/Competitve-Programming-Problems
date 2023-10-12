@@ -40,6 +40,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Giant Pizza _Unsolved_](cses/graphs/giant_pizza.cpp)
     - [Coin Collector](cses/graphs/coin_collector.cpp)
     - [Mail Delivery](cses/graphs/mail_delivery.cpp)
+    - [De Brujin Sequence](cses/)
     - [Teleporter Path](cses/graphs/teleporter_path.cpp)
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
