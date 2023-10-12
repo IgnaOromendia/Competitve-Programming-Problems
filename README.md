@@ -17,6 +17,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Building Roads](cses/graphs/building_roads.cpp)
     - [Building Teams](cses/graphs/building_teams.cpp)
     - [Counting Rooms](cses/graphs/counting_rooms.cpp)
+    - [Labyrinth](cses/graphs/labyrinth.cpp)
     - [Message Route](cses/graphs/message_route.cpp)
     - [Round Trip](cses/graphs/round_trip.cpp)
     - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp)
