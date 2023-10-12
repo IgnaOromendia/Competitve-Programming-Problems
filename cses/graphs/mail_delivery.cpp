@@ -14,6 +14,13 @@ vector<int> path;
 
 // O(m)
 void find_eulerian_path(int s) {
+    for(int i = 1; i <= n; i++) {
+        if(adj[i].size()&1) {
+            cout << IMP << endl;
+            return;
+        }
+    }
+
     stack<int> st;
     st.push(s);
 
@@ -21,7 +28,8 @@ void find_eulerian_path(int s) {
         int v = st.top();
         bool degree_zero = true;
 
-        for(node &u: adj[v]) {
+        while(!adj[v].empty()) {
+            node u = adj[v].back(); adj[v].pop_back();
             if(!marked_edge[u.second]) {
                 marked_edge[u.second] = true;
                 st.push(u.first);
@@ -45,7 +53,7 @@ int main() {
 
     int j = 0;
     // O(n + m)
-    while(m--) {
+    while(j < m) {
         int v, u; cin >> v >> u;
         adj[v].push_back(make_pair(u,j));
         adj[u].push_back(make_pair(v,j));
@@ -55,16 +63,7 @@ int main() {
     // O(m)
     find_eulerian_path(1);
 
-    bool valid = false;
-
-    for(node u: adj[1]) {
-        if (path[1] == u.first)
-            valid = true;
-    }
-
-    valid = valid and path[0] == path[path.size()-1] and path.size()-1 == marked_edge.size()-1;
-
-    if (valid) {
+    if (path.size() == m+1) {
         for(int i = 0; i < path.size(); i++) {
             cout << path[i] << " ";
         }
