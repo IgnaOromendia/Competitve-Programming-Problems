@@ -13,7 +13,7 @@ vector<vector<node> > adj;
 vector<int> path;
 
 // O(m)
-void find_eulerian_path(int s) {
+void find_eulerian_cycle(int s) {
     for(int i = 1; i <= n; i++) {
         if(adj[i].size()&1) {
             cout << IMP << endl;
@@ -61,7 +61,7 @@ int main() {
     }
 
     // O(m)
-    find_eulerian_path(1);
+    find_eulerian_cycle(1);
 
     if (path.size() == m+1) {
         for(int i = 0; i < path.size(); i++) {
