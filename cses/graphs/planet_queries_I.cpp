@@ -20,6 +20,7 @@ vector<pair<int, int> > dist_to_root;
 vector<vector<int> > dist_from_root, cycles;
 
 /// @brief Update the distance to the root of u coming from v
+/// O(1)
 void update_distance_root(int u, int v) {
     // Set the root
     int r =  dist_to_root[v].first;
@@ -28,13 +29,12 @@ void update_distance_root(int u, int v) {
     // Update the distance
     dist_to_root[u].second = dist_to_root[v].second + 1;
 
-    // Set into the matrix if is the logaritmic distance
-    double log_dist = log2(dist_to_root[u].second);
-
-    if (log_dist < dist_from_root[r].size() and log_dist == floor(log_dist))
-        dist_from_root[r][log_dist] = u;
+    // Set into the matrix 
+    dist_from_root[r].push_back(u);
 }
 
+/// @brief Process the graph updating distances and building cycles
+/// @param v 
 void dfs(int v) {
     state[v] = VISITING;
     int u = adj[v];
@@ -80,7 +80,7 @@ void cycles_and_distances() {
         }
 }
 
-
+// O(1)
 int process_cycle(int v, int k) {
     int position = cycle_id[v].second;
     int id       = cycle_id[v].first;
@@ -88,37 +88,29 @@ int process_cycle(int v, int k) {
     return cycles[id][(k + position) % size];
 }
 
-int travel(int v, int limit) {
-    if (limit == 0)              return v;
-    if (cycle_id[v].first == -1) return travel(adj[v],limit-1);
-    else                         return process_cycle(v, limit);
-}
-
+// O(1)
 int process_query(int v, int k) {
-    if (cycle_id[v].first != -1) return process_cycle(v, k); // O(1)
+    if (cycle_id[v].first != -1) return process_cycle(v, k);
 
     // Values assuming v is a root
     int teleports = k;
     int root      = v;
 
-    if (!is_root[v]) { // O(1)
+    if (!is_root[v]) {
         root      = dist_to_root[v].first;
         teleports = k + dist_to_root[v].second;
     } 
 
-    int pw_2  = floor(log2(teleports));
-    int last  = dist_from_root[root].size() - 1;
-    int i     = min(pw_2, last);
-    int limit = last >= 0 ? teleports - pow(2,i) : k;
-    int from  = last >= 0 ? dist_from_root[root][i] : v;
+    int size = dist_from_root[root].size();
 
-    while(from == -1) { // O(log k)
-        i--;
-        limit += pow(2,i);
-        from = dist_from_root[root][i]; 
-    } 
+    if (teleports < size) return dist_from_root[root][teleports];
 
-    return travel(from, limit); // O(n)
+    int from = dist_from_root[root][size - 1];
+    teleports -= (size - 1);
+
+    if (cycle_id[from].first == -1) from = adj[from];
+    
+    return process_cycle(from, teleports);
 }
 
 void destinations() {
@@ -129,11 +121,12 @@ void destinations() {
 int main() {
     cin >> n >> q;
 
-    adj.assign(n+1, int());
+    adj.assign(n+1, 0);
     state.assign(n+1, NOT_VISITED);
     is_root.assign(n+1, true);
     cycle_id.assign(n+1, make_pair(-1,-1));
     dist_to_root.assign(n+1, make_pair(-1,-1));
+    dist_from_root.assign(n+1, vector<int>(1, -1));
 
     for(int i = 1; i <= n; i++) {
         int v; cin >> v;
@@ -141,34 +134,18 @@ int main() {
         adj[i] = v;
     }
 
-    int max_k = 0;
     while(q--) {
         int x, k; cin >> x >> k;
-        if (k > max_k) max_k = k;
         queries.push_back(make_pair(x,k));
     }
 
-    max_k = round(log2(max_k));
-
-    dist_from_root.assign(n+1, vector<int>(max_k, -1));
-
     cycles_and_distances(); // O(n)
-
-    // for(int i = 0; i < cycles.size(); i++) {
-    //     if (!cycles[i].empty()) {
-    //         cout << i << ": ";
-    //         for(int j = 0; j < cycles[i].size(); j++) {
-    //             cout << cycles[i][j] << " ";
-    //         }
-    //         cout << endl;
-    //     }
-    // }
 
     for(int r = n+1; r <= n; r++) {
         if (is_root[r]) {
             cout << r << ": ";
             for(int i = 0; i < dist_from_root[r].size(); i++) {
-                cout << i << " ";
+                cout << dist_from_root[r][i] << " ";
             }
             cout << endl;
         }
