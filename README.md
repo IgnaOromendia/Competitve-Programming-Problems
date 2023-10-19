@@ -31,7 +31,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Longest Flight Route](cses/graphs/longest_flight_route.cpp)
     - [Game Routes](cses/graphs/game_routes.cpp)
     - [Investigation](cses/graphs/investigation.cpp)
-    - [Planet Queries I _Unsolved_](cses/graphs/planet_queries_I.cpp)
+    - [Planet Queries I _(2 TLE tests)_](cses/graphs/planet_queries_I.cpp)
     - [Planet Queries II _Unsolved_](cses/graphs/planet_queries_II.cpp)
     - [Planet Cycles _Unsolved_](cses/graphs/plantes_cycles.cpp)
     - [Road Reparation](cses/graphs/road_reparation.cpp)
