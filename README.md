@@ -14,35 +14,35 @@ In this repository you can find the solution of some problems that I have solved
     - [TRAFFICN](spoj/trafficn.cpp)
 - CSES
     - Graph's algorithms
-    - [Building Roads](cses/graphs/building_roads.cpp)
-    - [Building Teams](cses/graphs/building_teams.cpp)
-    - [Counting Rooms](cses/graphs/counting_rooms.cpp)
-    - [Labyrinth](cses/graphs/labyrinth.cpp)
-    - [Message Route](cses/graphs/message_route.cpp)
-    - [Round Trip](cses/graphs/round_trip.cpp)
-    - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp)
-    - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp)
-    - [High Score](cses/graphs/high_score.cpp)
-    - [Flight Discount](cses/graphs/flight_discount.cpp)
-    - [Cycle Finding](cses/graphs/cycle_finding.cpp)
+    - [Building Roads](cses/graphs/building_roads.cpp) - _DFS connecting componentes_
+    - [Building Teams](cses/graphs/building_teams.cpp) - _DFS finding cycles_
+    - [Counting Rooms](cses/graphs/counting_rooms.cpp) - _DFS connected componentes_
+    - [Labyrinth](cses/graphs/labyrinth.cpp) - _BFS building the shortest path_
+    - [Message Route](cses/graphs/message_route.cpp) - _BFS shortest path_
+    - [Round Trip](cses/graphs/round_trips.cpp) - _DFS building a cycle_
+    - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp) - _Dijkstra_
+    - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp) - _Floyd-Warshall_
+    - [High Score](cses/graphs/high_score.cpp) - _Bellman Ford_
+    - [Flight Discount](cses/graphs/flight_discount.cpp) - _Dijkstra_
+    - [Cycle Finding](cses/graphs/cycle_finding.cpp) - _Bellman Ford building a negative cycle_
     - [Flight Routes _Unsolved_](cses/graphs/flight_routes.cpp)
-    - [Round Trip II](cses/graphs/round_trip_II.cpp)
-    - [Course Schedule](cses/graphs/course_schedule.cpp)
-    - [Longest Flight Route](cses/graphs/longest_flight_route.cpp)
-    - [Game Routes](cses/graphs/game_routes.cpp)
-    - [Investigation](cses/graphs/investigation.cpp)
-    - [Planet Queries I _(2 TLE tests)_](cses/graphs/planet_queries_I.cpp)
+    - [Round Trip II](cses/graphs/round_trip_II.cpp) - _DFS building a cycle_
+    - [Course Schedule](cses/graphs/course_schedule.cpp) - _DFS topological sort_
+    - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) - _DFS longest path in topological order_
+    - [Game Routes](cses/graphs/game_routes.cpp) - _DP in a DAG_
+    - [Investigation](cses/graphs/investigation.cpp) - _Dijkstra with modification_
+    - [Planet Queries I _(2 TLE tests)_](cses/graphs/planet_queries_I.cpp) - _Pre-processing paths in Rho Graphs_
     - [Planet Queries II _Unsolved_](cses/graphs/planet_queries_II.cpp)
     - [Planet Cycles _Unsolved_](cses/graphs/plantes_cycles.cpp)
-    - [Road Reparation](cses/graphs/road_reparation.cpp)
-    - [Road Construction](cses/graphs/road_construction.cpp)
-    - [Flight Routes Check](cses/graphs/flight_routes_check.cpp)
-    - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp)
-    - [Giant Pizza _Unsolved_](cses/graphs/giant_pizza.cpp)
-    - [Coin Collector](cses/graphs/coin_collector.cpp)
-    - [Mail Delivery](cses/graphs/mail_delivery.cpp)
-    - [De Brujin Sequence](cses/)
-    - [Teleporter Path](cses/graphs/teleporter_path.cpp)
+    - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
+    - [Road Construction](cses/graphs/road_construction.cpp) _DSU_
+    - [Flight Routes Check](cses/graphs/flight_routes_check.cpp) _Strong components_
+    - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp) _Strong components_
+    - [Giant Pizza _Unsolved_](cses/graphs/giant_pizza.cpp) _2-SAT_
+    - [Coin Collector](cses/graphs/coin_collector.cpp) _DP in condensed strong components_
+    - [Mail Delivery](cses/graphs/mail_delivery.cpp) _Eulerian cycle_
+    - [De Brujin Sequence _Unsolved_](cses/)
+    - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
