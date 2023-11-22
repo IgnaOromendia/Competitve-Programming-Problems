@@ -2,16 +2,6 @@
 In this repository you can find the solution of some problems that I have solved in different online judges.
 
 ### Index
-- Spoj
-    - [AGGRESSIVE_COWS](spoj/aggressive_cows.cpp)
-    - [BUGLIFE](spoj/buglife.cpp)
-    - [COCONUTS](spoj/coconuts.cpp)
-    - [CONGRAPH](spoj/congraph.cpp)
-    - [DISGRAPH](spoj/disgraph.cpp)
-    - [GRAFFDEFF](spoj/graffdef.cpp)
-    - [PALIN](spoj/palin.cpp)
-    - [PRIME_GENRATOR](spoj/prime_generator.cpp)
-    - [TRAFFICN](spoj/trafficn.cpp)
 - CSES
     - Graph's algorithms
     - [Building Roads](cses/graphs/building_roads.cpp) - _DFS connecting componentes_
@@ -25,27 +15,38 @@ In this repository you can find the solution of some problems that I have solved
     - [High Score](cses/graphs/high_score.cpp) - _Bellman Ford_
     - [Flight Discount](cses/graphs/flight_discount.cpp) - _Dijkstra_
     - [Cycle Finding](cses/graphs/cycle_finding.cpp) - _Bellman Ford building a negative cycle_
-    - [Flight Routes _Unsolved_](cses/graphs/flight_routes.cpp)
+    - [Flight Routes](cses/graphs/flight_routes.cpp) _Unsolved_
     - [Round Trip II](cses/graphs/round_trip_II.cpp) - _DFS building a cycle_
     - [Course Schedule](cses/graphs/course_schedule.cpp) - _DFS topological sort_
     - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) - _DFS longest path in topological order_
     - [Game Routes](cses/graphs/game_routes.cpp) - _DP in a DAG_
     - [Investigation](cses/graphs/investigation.cpp) - _Dijkstra with modification_
-    - [Planet Queries I _(2 TLE tests)_](cses/graphs/planet_queries_I.cpp) - _Pre-processing paths in Rho Graphs_
-    - [Planet Queries II _Unsolved_](cses/graphs/planet_queries_II.cpp)
-    - [Planet Cycles _Unsolved_](cses/graphs/plantes_cycles.cpp)
+    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) - _Pre-processing paths in Rho Graphs (2 TLE tests)_
+    - [Planet Queries II](cses/graphs/planet_queries_II.cpp) _Unsolved_
+    - [Planet Cycles](cses/graphs/plantes_cycles.cpp) _Unsolved_
     - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
     - [Road Construction](cses/graphs/road_construction.cpp) _DSU_
     - [Flight Routes Check](cses/graphs/flight_routes_check.cpp) _Strong components_
     - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp) _Strong components_
-    - [Giant Pizza _Unsolved_](cses/graphs/giant_pizza.cpp) _2-SAT_
+    - [Giant Pizza](cses/graphs/giant_pizza.cpp) _Unsolved_ _2-SAT_
     - [Coin Collector](cses/graphs/coin_collector.cpp) _DP in condensed strong components_
     - [Mail Delivery](cses/graphs/mail_delivery.cpp) _Eulerian cycle_
-    - [De Brujin Sequence _Unsolved_](cses/)
+    - [De Brujin Sequence](cses/) _Unsolved_
     - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
+    - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
+- Spoj
+    - [AGGRESSIVE_COWS](spoj/aggressive_cows.cpp)
+    - [BUGLIFE](spoj/buglife.cpp)
+    - [COCONUTS](spoj/coconuts.cpp)
+    - [CONGRAPH](spoj/congraph.cpp)
+    - [DISGRAPH](spoj/disgraph.cpp)
+    - [GRAFFDEFF](spoj/graffdef.cpp)
+    - [PALIN](spoj/palin.cpp)
+    - [PRIME_GENRATOR](spoj/prime_generator.cpp)
+    - [TRAFFICN](spoj/trafficn.cpp)
 - UVA
     - [Shopaholic](uva/shopaholic.cpp)
     - [Oil deposit](uva/oil_deposit.cpp)
