@@ -11,7 +11,8 @@ using namespace std;
 // Variables
 vector<vector<int> > adj, adj_T, adj_cond;
 vector<long long> costs_cond, costs;
-vector<int> stack, state, str_comp, memo;
+vector<int> stack, state, str_comp;
+vector<long long> memo;
 int n, m;
 
 void dfs(int v, vector<vector<int> > &adj) {
@@ -74,7 +75,7 @@ void condense_strong_components(int k) {
     }
 }
 
-int max_profit(int v) {
+long long max_profit(int v) {
     if (memo[v] == -1) {
         memo[v] = costs_cond[v];
 
