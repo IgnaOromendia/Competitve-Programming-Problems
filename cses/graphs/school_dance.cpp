@@ -87,23 +87,7 @@ int main() {
         capacity[j + n + 1][t] = 1;
     }
 
-    for(int v = N; v < N; v++) {
-        cout << v << ": ";
-        for(int u: net[v]) {
-            cout << "( " << u << ", " << capacity[v][u] << " ) ";
-        }
-        cout << endl;
-    }
-
     int flow = maxflow(0, t);
-
-    for(int v = N; v < N; v++) {
-        cout << v << ": ";
-        for(int u: net[v]) {
-            cout << "( " << u << ", " << capacity[v][u] << " ) ";
-        }
-        cout << endl;
-    }
 
     cout << flow << endl;
 
