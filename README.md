@@ -34,6 +34,7 @@ In this repository you can find the solution of some problems that I have solved
     - [De Brujin Sequence](cses/) _Unsolved_
     - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
     - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
+    - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
