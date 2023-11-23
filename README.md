@@ -35,6 +35,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
     - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
     - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
+    - [School Dance](cses/graphs/school_dance.cpp) _Matching_
 - Codeforce
     - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
     - [Power grid](codeforce/power_grid.cpp)
