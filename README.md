@@ -36,9 +36,10 @@ In this repository you can find the solution of some problems that I have solved
     - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
     - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
     - [School Dance](cses/graphs/school_dance.cpp) _Matching_
+    - [Distinct Routes](cses/graphs/distinct_routes.cpp) _Unsolved Longest disjoint paths_
 - Codeforce
-    - [We Need More Bosses](codeforce/we_need_more_bosses.cpp)
-    - [Power grid](codeforce/power_grid.cpp)
+    - [We Need More Bosses](codeforce/we_need_more_bosses.cpp) _Longest path in bridges on a graph_
+    - [Power grid](codeforce/power_grid.cpp) _MST with virtual node_
 - Spoj
     - [AGGRESSIVE_COWS](spoj/aggressive_cows.cpp)
     - [BUGLIFE](spoj/buglife.cpp)
