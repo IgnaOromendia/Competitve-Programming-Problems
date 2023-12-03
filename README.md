@@ -31,7 +31,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Giant Pizza](cses/graphs/giant_pizza.cpp) _Unsolved_ _2-SAT_
     - [Coin Collector](cses/graphs/coin_collector.cpp) _DP in condensed strong components_
     - [Mail Delivery](cses/graphs/mail_delivery.cpp) _Eulerian cycle_
-    - [De Brujin Sequence](cses/) _Unsolved_
+    - [De Brujin Sequence](cses/) _Unsolved Hierholzer’s Algorithm - Eulerian circuit_
     - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
     - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
     - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
