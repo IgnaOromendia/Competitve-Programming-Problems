@@ -19,13 +19,12 @@ vector<bool> is_root;
 vector<pair<int, int> > dist_to_root;
 vector<vector<int> > dist_from_root, cycles;
  
-/// @brief Update the distance to the root of u coming from v
+/// @brief Update the distance to the root r of u coming from v
 /// O(1)
-void update_distance_root(int u, int v) {
+void update_distance_root(int u, int v, int r) {
     // Set the root
-    int r =  dist_to_root[v].first;
     dist_to_root[u].first = r;
-    
+
     // Update the distance
     dist_to_root[u].second = dist_to_root[v].second + 1;
  
@@ -35,21 +34,21 @@ void update_distance_root(int u, int v) {
 
 /// @brief Process the graph updating distances and building cycles
 /// @param v 
-void dfs(int v) {
+void dfs(int v, int r) {
     state[v] = VISITING;
     int u = adj[v];
  
     if (state[u] == NOT_VISITED) {
-        update_distance_root(u, v);
-        dfs(u);
+        update_distance_root(u, v, r);
+        dfs(u, r);
     } else if (state[u] == VISITING) {
         current = u;
         end_c = v;
         size_c = dist_to_root[end_c].second - dist_to_root[current].second + 1;
         path = vector<int>(size_c);
     } else {
-        update_distance_root(u, v);
-        if (cycle_id[u].first == -1) dfs(u);
+        update_distance_root(u, v, r);
+        if (cycle_id[u].first == -1) dfs(u, r);
     }
 
     if (current != end_c and i < size_c) {
@@ -81,7 +80,7 @@ void cycles_and_distances() {
         if (state[v] == NOT_VISITED) {
             dist_to_root[v].first = v;
             dist_to_root[v].second = 0;
-            dfs(v);
+            dfs(v, v);
         }
 }
  
@@ -118,11 +117,6 @@ int process_query(int v, int k) {
     return process_cycle(from, teleports);
 }
  
-void destinations() {
-    for(query &q: queries)
-        cout << process_query(q.first, q.second) << endl;
-}
- 
 int main() {
     cin >> n >> q;
  
@@ -146,15 +140,6 @@ int main() {
  
     cycles_and_distances(); // O(n)
  
-    for(int r = n+1; r <= n; r++) {
-        if (is_root[r]) {
-            cout << r << ": ";
-            for(int i = 0; i < dist_from_root[r].size(); i++) {
-                cout << dist_from_root[r][i] << " ";
-            }
-            cout << endl;
-        }
-    }
- 
-    destinations(); // O(n)
+    for(query &q: queries)
+        cout << process_query(q.first, q.second) << endl;
 }
