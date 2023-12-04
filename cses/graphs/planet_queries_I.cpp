@@ -11,9 +11,9 @@
 using namespace std;
 typedef pair<int, int> query;
  
-int n, q, cycle_tag = 0;
+int n, q, cycle_tag = 0, current = -1, end_c = -1, i, size_c;;
 vector<query> queries;
-vector<int> adj, state;
+vector<int> adj, state, path;
 vector<pair<int, int> > cycle_id;
 vector<bool> is_root;
 vector<pair<int, int> > dist_to_root;
@@ -32,7 +32,7 @@ void update_distance_root(int u, int v) {
     // Set into the matrix 
     dist_from_root[r].push_back(u);
 }
- 
+
 /// @brief Process the graph updating distances and building cycles
 /// @param v 
 void dfs(int v) {
@@ -43,32 +43,34 @@ void dfs(int v) {
         update_distance_root(u, v);
         dfs(u);
     } else if (state[u] == VISITING) {
-        int start = u;
-        int end = v;
- 
-        // Building the cycle
-        int i = 0;
-        int size = dist_to_root[end].second - dist_to_root[start].second + 1; 
-        vector<int> path(size);
-        while(start != end) {
-            cycle_id[start].first  = cycle_tag;
-            cycle_id[start].second = i;
-            path[i] = start;
-            start = adj[start];
-            i++;
-        }
-        cycle_id[end].first = cycle_tag;
-        cycle_id[end].second = i;
-        path[i] = end;
- 
-        // Saving the length of the cycle
-        cycles.push_back(path);
- 
-        // Incrementing cycle tag
-        cycle_tag++;
+        current = u;
+        end_c = v;
+        size_c = dist_to_root[end_c].second - dist_to_root[current].second + 1;
+        path = vector<int>(size_c);
     } else {
         update_distance_root(u, v);
         if (cycle_id[u].first == -1) dfs(u);
+    }
+
+    if (current != end_c and i < size_c) {
+        // Saving in cycle data
+        cycle_id[current].first = cycle_tag;
+        cycle_id[current].second = i;
+        path[i] = current;
+        current = adj[current];
+        i++;
+    } else if (current == end_c and i == size_c - 1) {
+        // Saving in data and reseting variables
+        cycle_id[end_c].first = cycle_tag;
+        cycle_id[end_c].second = i;
+        path[i] = end_c;
+        cycles.push_back(path);
+        cycle_tag++;
+        i = 0;
+        size_c = 0;
+        current = -1;
+        end_c = -1;
+        path.clear();
     }
  
     state[v] = VISITED;
