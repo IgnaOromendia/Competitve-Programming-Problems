@@ -21,7 +21,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) - _DFS longest path in topological order_
     - [Game Routes](cses/graphs/game_routes.cpp) - _DP in a DAG_
     - [Investigation](cses/graphs/investigation.cpp) - _Dijkstra with modification_
-    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) - _Pre-processing paths in Rho Graphs (2 TLE tests)_
+    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) - _Binary jumping in rho's graph_
     - [Planet Queries II](cses/graphs/planet_queries_II.cpp) _Unsolved_
     - [Planet Cycles](cses/graphs/plantes_cycles.cpp) _Unsolved_
     - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
