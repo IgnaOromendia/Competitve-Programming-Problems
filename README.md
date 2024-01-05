@@ -33,6 +33,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Mail Delivery](cses/graphs/mail_delivery.cpp) _Eulerian cycle_
     - [De Brujin Sequence](cses/) _Eulerian circuit_
     - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
+    - [Hamilitonian Flights](cses//graphs/hamilitonian_flights.cpp) _Amount of Hamiltonian paths with bitmasking_
     - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
     - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
     - [School Dance](cses/graphs/school_dance.cpp) _Matching_
