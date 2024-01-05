@@ -13,7 +13,7 @@ int parent[max_planets][max_jump];
 
 int travel(int x, int k) {
     for(int p = 0; p < max_jump; p++) 
-        if(k & (1 << p)) x = parent[x][p];
+        if(k & (1 << p)) x = parent[x][p]; // k bit-and 2^p 
     return x;
 }
  
