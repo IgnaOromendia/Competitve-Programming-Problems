@@ -23,7 +23,7 @@ In this repository you can find the solution of some problems that I have solved
     - [Investigation](cses/graphs/investigation.cpp) - _Dijkstra with modification_
     - [Planet Queries I](cses/graphs/planet_queries_I.cpp) - _Binary jumping in rho's graph_
     - [Planet Queries II](cses/graphs/planet_queries_II.cpp) _Unsolved_
-    - [Planet Cycles](cses/graphs/plantes_cycles.cpp) _Unsolved_
+    - [Planet Cycles](cses/graphs/planet_cycles.cpp) _DFS counting steps to cycle_
     - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
     - [Road Construction](cses/graphs/road_construction.cpp) _DSU_
     - [Flight Routes Check](cses/graphs/flight_routes_check.cpp) _Strong components_
