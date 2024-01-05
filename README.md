@@ -4,24 +4,24 @@ In this repository you can find the solution of some problems that I have solved
 ### Index
 - CSES
     - Graph's algorithms
-    - [Building Roads](cses/graphs/building_roads.cpp) - _DFS connecting componentes_
-    - [Building Teams](cses/graphs/building_teams.cpp) - _DFS finding cycles_
-    - [Counting Rooms](cses/graphs/counting_rooms.cpp) - _DFS connected componentes_
-    - [Labyrinth](cses/graphs/labyrinth.cpp) - _BFS building the shortest path_
-    - [Message Route](cses/graphs/message_route.cpp) - _BFS shortest path_
-    - [Round Trip](cses/graphs/round_trips.cpp) - _DFS building a cycle_
-    - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp) - _Dijkstra_
-    - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp) - _Floyd-Warshall_
-    - [High Score](cses/graphs/high_score.cpp) - _Bellman Ford_
-    - [Flight Discount](cses/graphs/flight_discount.cpp) - _Dijkstra_
-    - [Cycle Finding](cses/graphs/cycle_finding.cpp) - _Bellman Ford building a negative cycle_
+    - [Building Roads](cses/graphs/building_roads.cpp) _DFS connecting componentes_
+    - [Building Teams](cses/graphs/building_teams.cpp) _DFS finding cycles_
+    - [Counting Rooms](cses/graphs/counting_rooms.cpp) _DFS connected componentes_
+    - [Labyrinth](cses/graphs/labyrinth.cpp) _BFS building the shortest path_
+    - [Message Route](cses/graphs/message_route.cpp) _BFS shortest path_
+    - [Round Trip](cses/graphs/round_trips.cpp) _DFS building a cycle_
+    - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp) _Dijkstra_
+    - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp) _Floyd-Warshall_
+    - [High Score](cses/graphs/high_score.cpp) _Bellman Ford_
+    - [Flight Discount](cses/graphs/flight_discount.cpp) _Dijkstra_
+    - [Cycle Finding](cses/graphs/cycle_finding.cpp) _Bellman Ford building a negative cycle_
     - [Flight Routes](cses/graphs/flight_routes.cpp) _Unsolved_
-    - [Round Trip II](cses/graphs/round_trip_II.cpp) - _DFS building a cycle_
-    - [Course Schedule](cses/graphs/course_schedule.cpp) - _DFS topological sort_
-    - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) - _DFS longest path in topological order_
-    - [Game Routes](cses/graphs/game_routes.cpp) - _DP in a DAG_
-    - [Investigation](cses/graphs/investigation.cpp) - _Dijkstra with modification_
-    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) - _Binary jumping in rho's graph_
+    - [Round Trip II](cses/graphs/round_trip_II.cpp) _DFS building a cycle_
+    - [Course Schedule](cses/graphs/course_schedule.cpp) _DFS topological sort_
+    - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) _DFS longest path in topological order_
+    - [Game Routes](cses/graphs/game_routes.cpp) _DP in a DAG_
+    - [Investigation](cses/graphs/investigation.cpp) _Dijkstra with modification_
+    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) _Binary jumping in rho's graph_
     - [Planet Queries II](cses/graphs/planet_queries_II.cpp) _Unsolved_
     - [Planet Cycles](cses/graphs/planet_cycles.cpp) _DFS counting steps to cycle_
     - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
