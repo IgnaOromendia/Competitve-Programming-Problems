@@ -1,58 +1,14 @@
 # Problems
-In this repository you can find the solution of some problems that I have solved in different online judges.
+In this repository you can find the solution of some problems that I have solved in different online judges.\
+Each folder has an index with the problem's file and a breieff description of the solution 
 
 ### Index
 - CSES
-    - Graph's algorithms
-    - [Building Roads](cses/graphs/building_roads.cpp) _DFS connecting componentes_
-    - [Building Teams](cses/graphs/building_teams.cpp) _DFS finding cycles_
-    - [Counting Rooms](cses/graphs/counting_rooms.cpp) _DFS connected componentes_
-    - [Labyrinth](cses/graphs/labyrinth.cpp) _BFS building the shortest path_
-    - [Message Route](cses/graphs/message_route.cpp) _BFS shortest path_
-    - [Round Trip](cses/graphs/round_trips.cpp) _DFS building a cycle_
-    - [Shortest Routes I](cses/graphs/shortest_routes_i.cpp) _Dijkstra_
-    - [Shortest Routes II](cses/graphs/shortest_routes_ii.cpp) _Floyd-Warshall_
-    - [High Score](cses/graphs/high_score.cpp) _Bellman Ford_
-    - [Flight Discount](cses/graphs/flight_discount.cpp) _Dijkstra_
-    - [Cycle Finding](cses/graphs/cycle_finding.cpp) _Bellman Ford building a negative cycle_
-    - [Flight Routes](cses/graphs/flight_routes.cpp) _Unsolved_
-    - [Round Trip II](cses/graphs/round_trip_II.cpp) _DFS building a cycle_
-    - [Course Schedule](cses/graphs/course_schedule.cpp) _DFS topological sort_
-    - [Longest Flight Route](cses/graphs/longest_flight_route.cpp) _DFS longest path in topological order_
-    - [Game Routes](cses/graphs/game_routes.cpp) _DP in a DAG_
-    - [Investigation](cses/graphs/investigation.cpp) _Dijkstra with modification_
-    - [Planet Queries I](cses/graphs/planet_queries_I.cpp) _Binary jumping in rho's graph_
-    - [Planet Queries II](cses/graphs/planet_queries_II.cpp) _Unsolved_
-    - [Planet Cycles](cses/graphs/planet_cycles.cpp) _DFS counting steps to cycle_
-    - [Road Reparation](cses/graphs/road_reparation.cpp) _Kruskal MST_
-    - [Road Construction](cses/graphs/road_construction.cpp) _DSU_
-    - [Flight Routes Check](cses/graphs/flight_routes_check.cpp) _Strong components_
-    - [Planets and Kingdoms](cses/graphs/planets_and_kingdoms.cpp) _Strong components_
-    - [Giant Pizza](cses/graphs/giant_pizza.cpp) _Unsolved_ _2-SAT_
-    - [Coin Collector](cses/graphs/coin_collector.cpp) _DP in condensed strong components_
-    - [Mail Delivery](cses/graphs/mail_delivery.cpp) _Eulerian cycle_
-    - [De Brujin Sequence](cses/) _Eulerian circuit_
-    - [Teleporter Path](cses/graphs/teleporter_path.cpp) _Eulerian path_
-    - [Hamilitonian Flights](cses//graphs/hamilitonian_flights.cpp) _Amount of Hamiltonian paths with bitmasking_
-    - [Download Speed](cses/graphs/download_speed.cpp) _Max flow_
-    - [Police Chase](cses/graphs/police_chase.cpp) _Minimum cut_
-    - [School Dance](cses/graphs/school_dance.cpp) _Matching_
-    - [Distinct Routes](cses/graphs/distinct_routes.cpp) _Unsolved Longest disjoint paths_
+    - [Graph's algorithms (35)](cses/graphs/)
+    - [Dynamic Programming (0)](cses/dp/)
 - Codeforce
-    - [We Need More Bosses](codeforce/we_need_more_bosses.cpp) _Longest path in bridges on a graph_
-    - [Power grid](codeforce/power_grid.cpp) _MST with virtual node_
+    - [Solutions (2)](codeforce/)
 - Spoj
-    - [AGGRESSIVE_COWS](spoj/aggressive_cows.cpp)
-    - [BUGLIFE](spoj/buglife.cpp)
-    - [COCONUTS](spoj/coconuts.cpp)
-    - [CONGRAPH](spoj/congraph.cpp)
-    - [DISGRAPH](spoj/disgraph.cpp)
-    - [GRAFFDEFF](spoj/graffdef.cpp)
-    - [PALIN](spoj/palin.cpp)
-    - [PRIME_GENRATOR](spoj/prime_generator.cpp)
-    - [TRAFFICN](spoj/trafficn.cpp)
+    - [Solutions (10)](spoj/)
 - UVA
-    - [Shopaholic](uva/shopaholic.cpp)
-    - [Oil deposit](uva/oil_deposit.cpp)
-    - [Unlock the lock](uva/unlock_the_lock.cpp)
-    - [Racing](uva/racing.cpp)
+    - [Solutions (4)](uva/)
