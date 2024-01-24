@@ -10,19 +10,6 @@ vector<int> pages;
 vector<int> price;
 vector<vector<int> > memo;
 
-int max_pages(int budget, int i) {
-    if (budget < 0) return -INF;
-    if (i == n and budget >= 0) return 0;
-
-    if(memo[budget][i] == -1) {
-        int skip = max_pages(budget, i + 1);
-        int buy = pages[i] + max_pages(budget - price[i], i + 1);
-        memo[budget][i] = max(skip, buy);
-    }
-
-    return memo[budget][i];
-}
-
 void max_pages() {
     for(int book = 1; book <= n; book++) {
         for(int budget = 0; budget <= x; budget++) {
