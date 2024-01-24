@@ -6,3 +6,4 @@
 - [Coin Combinations II](./solutions/coin_comb2.cpp)
 - [Removing Digits](./solutions/removing_digits.cpp)
 - [Grid Paths](./solutions/grid_paths.cpp)
+- [Book Shop](./solutions/book_shops.cpp)
