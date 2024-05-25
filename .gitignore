@@ -4,3 +4,5 @@ ejec*
 test*
 !*.cpp
 !*.md
+uva/solutions/murcias_skyline_td.cpp
+uva/solutions/argentina2.cpp
