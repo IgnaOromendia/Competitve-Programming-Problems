@@ -11,4 +11,4 @@ Each folder has an index with the problem's file and a breieff description of th
 - Spoj
     - [Solutions (10)](spoj/)
 - UVA
-    - [Solutions (5)](uva/)
+    - [Solutions (7)](uva/)
