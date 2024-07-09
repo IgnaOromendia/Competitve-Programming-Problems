@@ -9,3 +9,6 @@
 - [PALIN](./solutions/palin.cpp)
 - [PRIME_GENRATOR](./solutions/prime_generator.cpp)
 - [TRAFFICN](./solutions/trafficn.cpp)
+
+Hiden
+-[GEORGE](./solutions/george.cpp) TERMINAR

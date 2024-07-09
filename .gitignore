@@ -4,6 +4,6 @@ ejec*
 test*
 !*.cpp
 !*.md
-uva/solutions/murcias_skyline.cpp
-uva/solutions/argentina.cpp
-uva/solutions/abfl.cpp
+spoj/solutions/george.cpp
+uva/solutions/lift_hopping.cpp
+uva/solutions/titanic.cpp
