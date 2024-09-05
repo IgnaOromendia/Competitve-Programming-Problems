@@ -11,6 +11,7 @@ bool possible_position(int mid) {
     int count = 1;
     int selected_stall = stalls[0];
 
+    // Compararmos las distancias entre establos para que sea mayor a mid
     for(int i = 1; i < n; i++) {
         if(stalls[i] - selected_stall >= mid) {
             selected_stall = stalls[i];
@@ -29,10 +30,11 @@ int distance() {
     int min_diff = 1;
     int mid;
 
-    //  Binary search with validation O(n log n)
+    //  Busqueda binaria en la distancia maxima que tienen que cumplir los establos
     while(min_diff <= max_diff) {
         mid = (max_diff + min_diff) / 2;
-        if (possible_position(mid)) { // O(n)
+        // Chequeo de posiciones
+        if (possible_position(mid)) {
             min_diff = mid + 1;
             result = max(result, mid);
         } else {
