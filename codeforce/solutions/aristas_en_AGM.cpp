@@ -22,12 +22,9 @@ struct DSU {
     vector<int> p, rank;
 
     DSU(int n){
-        int p[n];
-        int rank[n];
-        for(int i = 0; i < n; i++) {
-            p[i] = i;
-            rank[i] = 1;
-        }
+        p = vector<int>(n, -1);
+        rank = vector<int>(n, 1);
+        for(int i = 0; i < n; i++) p[i] = i;
     }
 
     void unionByRank(int u, int v){
@@ -50,11 +47,11 @@ struct DSU {
 
 };
 
-int n,m; 
+int n,m,timer; 
 unordered_map<int, vector<pair<int, int> > > adj; 
 unordered_map<int, bool> visited;
 unordered_map<int, int> tin, low;
-int timer;
+
 
 void dfs(int* status, int v, int p = -1) {
     visited[v] = true;
@@ -124,6 +121,7 @@ void classify_edges(int* status, edge* edges) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(0);
     cin >> n >> m;
 
     int status[m];
