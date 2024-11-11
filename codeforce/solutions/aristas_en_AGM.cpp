@@ -14,6 +14,7 @@ struct edge {
     int v;
     int w;
     int idx;
+    edge(): u(0), v(0), w(0), idx(0) {}
     edge(int u, int v, int w, int i): u(u), v(v), w(w), idx(i) {}
 };
 
@@ -21,9 +22,12 @@ struct DSU {
     vector<int> p, rank;
 
     DSU(int n){
-        p = vector<int>(n, -1);
-        rank = vector<int>(n, 1);
-        for(int i = 0; i < n; i++) p[i] = i;
+        int p[n];
+        int rank[n];
+        for(int i = 0; i < n; i++) {
+            p[i] = i;
+            rank[i] = 1;
+        }
     }
 
     void unionByRank(int u, int v){
@@ -47,14 +51,12 @@ struct DSU {
 };
 
 int n,m; 
-vector<edge> edges;
 unordered_map<int, vector<pair<int, int> > > adj; 
 unordered_map<int, bool> visited;
 unordered_map<int, int> tin, low;
-vector<int> status;
 int timer;
 
-void dfs(int v, int p = -1) {
+void dfs(int* status, int v, int p = -1) {
     visited[v] = true;
     tin[v] = low[v] = timer++;
     bool parent_skipped = false;
@@ -67,27 +69,26 @@ void dfs(int v, int p = -1) {
         if (visited[to]) {
             low[v] = min(low[v], tin[to]);
         } else {
-            dfs(to, v);
+            dfs(status, to, v);
             low[v] = min(low[v], low[to]);
             if (low[to] > tin[v]) status[edgeID] = 2;
         }
     }
 }
 
-void find_bridges() {
+void find_bridges(int* status) {
     timer = 0;
     visited.clear();
     tin.clear();
     low.clear();
     for (auto& [u, id]: adj) 
         if (!visited[u])
-            dfs(u);
+            dfs(status, u);
 }
 
-void classify_edges() {
-    sort(edges.begin(), edges.end(), [](edge a, edge b) { return a.w < b.w; });
+void classify_edges(int* status, edge* edges) {
+    sort(edges, edges + m, [](edge a, edge b) { return a.w < b.w; });
 
-    status.assign(m, 0);
     DSU dsu(n);
 
     for(int i = 0; i < m;) {
@@ -107,7 +108,7 @@ void classify_edges() {
         }
 
         // Encontramos puente
-        find_bridges();
+        find_bridges(status);
 
         // Limpiamos G' 
         adj.clear();
@@ -125,16 +126,20 @@ void classify_edges() {
 int main() {
     cin >> n >> m;
 
+    int status[m];
+    edge edges[m];
+
     for(int i = 0; i < m; i++) {
         int a,b,c; cin >> a >> b >> c; a--;b--;
-        edges.push_back(edge(a,b,c,i));
+        edges[i]  = edge(a,b,c,i);
+        status[i] = 0;
     }
 
-    classify_edges();
+    classify_edges(status, edges);
 
     for(int i = 0; i < m; i++) {
-        if (status[i] == 0) cout << none << endl;
-        else if (status[i] == 1) cout << alo << endl;
+        if (status[i] == 1) cout << alo << endl;
         else if (status[i] == 2) cout << any << endl;
+        else cout << none << endl;
     }
 }
