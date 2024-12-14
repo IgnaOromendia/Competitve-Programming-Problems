@@ -11,3 +11,4 @@
 - [Counting Towers](./solutions/counting_towers.cpp)
 - [Edit Distance](./solutions/edit_distance.cpp)
 - [Rectangle Cutting](./solutions/rectangle_cutting.cpp)
+- [Money sum](./solutions/money_sum.cpp)
