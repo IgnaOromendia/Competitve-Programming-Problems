@@ -12,3 +12,4 @@
 - [Edit Distance](./solutions/edit_distance.cpp)
 - [Rectangle Cutting](./solutions/rectangle_cutting.cpp)
 - [Money sum](./solutions/money_sum.cpp)
+- [Removal game](./solutions/removal_game.cpp)
