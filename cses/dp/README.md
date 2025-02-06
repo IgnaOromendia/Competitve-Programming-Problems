@@ -15,3 +15,4 @@
 - [Removal game](./solutions/removal_game.cpp)
 - [Two Sets II](./solutions/two_sets2.cpp)
 - [Increasing subsequence](./solutions/inc_subseq.cpp)
+- [Projects](./solutions/projects.cpp)
