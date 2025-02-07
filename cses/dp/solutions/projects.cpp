@@ -32,12 +32,9 @@ int main() {
         return lhs.starting_day < rhs.starting_day;
     });
 
-    forn(i, 0, n) {
+    forn(i, 0, n) 
         start_times[i] = projects[i].starting_day;
-        // cout << start_times[i] << " ";
-    }
     
-    // cout << endl;
 
     vector<ll> memo(n + 1, 0);  
     
@@ -45,12 +42,6 @@ int main() {
         memo[i + 1] = max(memo[i + 1], memo[i]);
         
         int next_project = lower_bound(start_times.begin(), start_times.end(), projects[i].ending_day+1) - start_times.begin();
-        // int next_project = i + 1;
-        // while (next_project < n && projects[next_project].starting_day <= projects[i].ending_day) {
-        //     ++next_project;
-        // }
-
-        // cout << next_project2 << " " << next_project << endl;
 
         memo[next_project] = max(memo[next_project], memo[i] + projects[i].reward);
     }
