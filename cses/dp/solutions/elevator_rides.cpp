@@ -18,53 +18,45 @@ const int INF  = 1e9;
 const int MAXN = 0;
 const int mod  = 1000000007;
 
-int n, max_weight;
-
-vi weights;
-mat memo;
-
-int non_empty_rides(vi& rides) {
-    int sum = 0;
-    forn(i,0,rides.size()){
-        // cout << rides[i] << " ";
-        sum += rides[i] > 0;
-    }
-    // cout << endl;
-    return sum;
-}
-
-int min_rides(int i, int rides, vi& elevators) {
-    if (i == n) return non_empty_rides(elevators);
-
-    if (memo[i][rides] != -1) return memo[i][rides];
-    
-    memo[i][rides] = INF;
-    forn(j, 0, n) {
-        if (elevators[j] + weights[i] <= max_weight) {
-            elevators[j] += weights[i];
-            memo[i][rides] = min(memo[i][rides], min_rides(i+1, non_empty_rides(elevators), elevators));
-            elevators[j] -= weights[i];
-        }
-    }   
-
-    return memo[i][rides];
-}
 
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(NULL);
 
-    cin >> n >> max_weight;
+    int n, max_weight; cin >> n >> max_weight;
 
-    weights.assign(n, 0);
-    memo.assign(n, vector<int>(n,-1));
+    // <min amount of rides, min weight of the last ride>
+    pi memo[1 << n];
+    int weights[n];
 
     forn(i, 0, n) cin >> weights[i];
+   
+    memo[0] = {1, 0};
 
-    vi elevators(n,0);
+    forn(s, 1, 1 << n) {
+        memo[s] = {n+1, 0};
 
-    cout << min_rides(0, 0, elevators) << endl;
+        forn(p, 0, n) {
+            // Item si included in the set
+            if (s & (1 << p)) {
+                // Subset without p
+                pi option = memo[s^(1 << p)];
 
-    
+                if (option.second + weights[p] <= max_weight){ 
+                    option.second += weights[p];
+                } else {
+                    option.first++;
+                    option.second = weights[p];
+                }
+
+                memo[s] = min(memo[s], option);
+            }
+            
+        }
+    }
+
+    cout << memo[(1 << n)-1].first << endl;
+
+    return 0;
 
 }
