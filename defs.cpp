@@ -16,7 +16,7 @@ typedef pair<int,int> pi;
 
 const int INF  = 1e9;
 const int MAXN = 0;
-const int mod  = 1000000007;
+const int mod  = 1e9 + 7;
 
 int main() {
     ios_base::sync_with_stdio(0);
