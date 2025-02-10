@@ -7,7 +7,7 @@
 - [Removing Digits](./solutions/removing_digits.cpp)
 - [Grid Paths](./solutions/grid_paths.cpp)
 - [Book Shop](./solutions/book_shops.cpp)
--
+- [Array Description TODO](./solutions/array_description.cpp)
 - [Counting Towers](./solutions/counting_towers.cpp)
 - [Edit Distance](./solutions/edit_distance.cpp)
 - [Rectangle Cutting](./solutions/rectangle_cutting.cpp)
@@ -17,4 +17,5 @@
 - [Increasing Subsequence](./solutions/inc_subseq.cpp)
 - [Projects](./solutions/projects.cpp)
 - [Elevator Rides](./solutions/elevator_rides.cpp)
-- [Counting Tilings](./solutions/counting_tilings.cpp)
+- [Counting Tilings TODO](./solutions/counting_tilings.cpp)
+- [Counting Numbers TODO](./solutions/counting_numbers.cpp)

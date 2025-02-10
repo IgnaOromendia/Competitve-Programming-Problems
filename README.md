@@ -5,10 +5,10 @@ Each folder has an index with the problem's file and a breieff description of th
 ### Index
 - CSES
     - [Graph's algorithms (35)](cses/graphs/)
-    - [Dynamic Programming (7)](cses/dp/)
+    - [Dynamic Programming (14)](cses/dp/)
 - Codeforce
-    - [Solutions (2)](codeforce/)
+    - [Solutions (10)](codeforce/)
 - Spoj
-    - [Solutions (10)](spoj/)
+    - [Solutions (11)](spoj/)
 - UVA
-    - [Solutions (7)](uva/)
+    - [Solutions (10)](uva/)
