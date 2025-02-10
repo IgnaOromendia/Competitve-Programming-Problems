@@ -35,9 +35,6 @@ int main() {
 
     while(q--) {
         ll a,b; cin >> a >> b; 
-
-        if (a < 0) a = 0;
-
         cout << sums[b] - sums[a-1] << endl;
     }
 
