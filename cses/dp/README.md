@@ -17,3 +17,4 @@
 - [Increasing Subsequence](./solutions/inc_subseq.cpp)
 - [Projects](./solutions/projects.cpp)
 - [Elevator Rides](./solutions/elevator_rides.cpp)
+- [Counting Tilings](./solutions/counting_tilings.cpp)
