@@ -12,7 +12,7 @@ typedef pair<int,int> pi;
 #define pb push_back
 #define mp make_pair
 
-#define forn(i,a,b) for (int i = a; i < b; i++)
+#define forn(i,from,to) for (int i = form; i < to; i++)
 
 const int INF  = 1e9;
 const int MAXN = 0;
