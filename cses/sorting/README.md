@@ -2,3 +2,4 @@
 
 - [Distinct Numbers](./distinct_numbers.cpp)
 - [Appartments](./appartments.cpp)
+- [Ferris Wheel](./ferris_wheel.cpp)
