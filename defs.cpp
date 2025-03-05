@@ -2,6 +2,7 @@
 #include <vector>
 #include <cstring>
 #include <algorithm>
+#include <math.h>
 
 using namespace std;
 
@@ -18,6 +19,7 @@ typedef pair<int,int> pi;
 const int INF  = 1e9;
 const int MAXN = 0;
 const int mod  = 1e9 + 7;
+const float PI = 3.14159265359;
 
 int main() {
     ios_base::sync_with_stdio(0);
