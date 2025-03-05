@@ -10,6 +10,10 @@
 - [Doves and Bombs](./solutions/doves.cpp)
 - [Genosis](./solutions/genosis.cpp)
 - [My T-shirt suits me](./solutions/tshirt.cpp)
+- [Finanacial Mangements](./solutions/financial_mangement.cpp)
+- [Doubles](./solutions/doubles.cpp)
+- [Sum of Consecutive Prime Numbers](./solutions/prime_consec_sum.cpp)
+- [I Think I Need a Houseboat](./solutions/houseboat.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
