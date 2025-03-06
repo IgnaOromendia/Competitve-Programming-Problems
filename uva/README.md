@@ -14,6 +14,10 @@
 - [Doubles](./solutions/doubles.cpp)
 - [Sum of Consecutive Prime Numbers](./solutions/prime_consec_sum.cpp)
 - [I Think I Need a Houseboat](./solutions/houseboat.cpp)
+- [Red and Black](./solutions/red_black.cpp)
+- [Symmetric Order](./solutions/symmetric_order.cpp)
+- [Speed Limit](./solutions/speed_limit.cpp)
+- [Hangover](./solutions/hangover.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
