@@ -18,6 +18,10 @@
 - [Symmetric Order](./solutions/symmetric_order.cpp)
 - [Speed Limit](./solutions/speed_limit.cpp)
 - [Hangover](./solutions/hangover.cpp)
+- [Calendar](./solutions/calendar.cpp)
+- [Error Correction](./solutions/error_correction.cpp)
+- [Tex Quotes](./solutions/tex_quotes.cpp)
+- [Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
