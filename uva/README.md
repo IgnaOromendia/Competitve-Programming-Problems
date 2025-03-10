@@ -22,6 +22,10 @@
 - [Error Correction](./solutions/error_correction.cpp)
 - [Tex Quotes](./solutions/tex_quotes.cpp)
 - [Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
+- [The House of Santa Clauss](./solutions/house_of_santa_clauss.cpp)
+- [Primes Path](./solutions/primes_path.cpp)
+- [Following Orders](./solutions/following_orders.cpp)
+- [The New Villa](./solutions/the_new_villa.cpp) TERMINAR
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
