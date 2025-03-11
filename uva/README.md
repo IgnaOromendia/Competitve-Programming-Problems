@@ -26,6 +26,9 @@
 - [Primes Path](./solutions/primes_path.cpp)
 - [Following Orders](./solutions/following_orders.cpp)
 - [The New Villa](./solutions/the_new_villa.cpp) TERMINAR
+- [Frog Distance](./solutions/frogger.cpp)
+- [Arbitrage](./solutions/arbitrage.cpp)
+- [Push Box](./solutions/push_box.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
