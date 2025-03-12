@@ -28,7 +28,11 @@
 - [The New Villa](./solutions/the_new_villa.cpp) TERMINAR
 - [Frog Distance](./solutions/frogger.cpp)
 - [Arbitrage](./solutions/arbitrage.cpp)
-- [Push Box](./solutions/push_box.cpp)
+- [Push Box](./solutions/push_box.cpp) TERMINAR
+- [Facstone Benchmark](./solutions/facstone_ben.cpp)
+- [Matches Game](./solutions/matches_game.cpp)
+- [Ants](./solutions/ants.cpp)
+- [Bridges](./solutions/bridges.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
