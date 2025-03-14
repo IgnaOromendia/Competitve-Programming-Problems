@@ -33,6 +33,9 @@
 - [Matches Game](./solutions/matches_game.cpp)
 - [Ants](./solutions/ants.cpp)
 - [Bridges](./solutions/bridges.cpp)
+- [The Hardest Problem Ever](./solutions/hardest_problem.cpp)
+- [Pass-Muraille](./solutions/pass_muraille.cpp)
+- [Radar Installation](./solutions/radar_install.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
