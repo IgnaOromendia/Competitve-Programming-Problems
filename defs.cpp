@@ -13,6 +13,7 @@ typedef long long ll;
 typedef vector<int> vi;
 typedef vector<vector<int> > mat;
 typedef pair<int,int> pi;
+typedef pair<double,double> pd;
 
 #define pb push_back
 #define mp make_pair
