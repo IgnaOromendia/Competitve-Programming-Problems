@@ -21,10 +21,10 @@ typedef pair<double,double> pd;
 
 #define forn(i,from,to) for (int i = from; i < to; i++)
 
-const int INF  = 1e9;
-const int MAXN = 0;
-const int mod  = 1e9 + 7;
-const double PI = 3.14159265359;
+constexpr int INF  = 1e9;
+constexpr int MAXN = 0;
+constexpr int mod  = 1e9 + 7;
+constexpr double PI = 3.14159265359;
 
 int main() {
     ios_base::sync_with_stdio(0);
