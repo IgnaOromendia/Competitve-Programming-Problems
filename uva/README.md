@@ -41,6 +41,7 @@
 - [Binomial Showdown](./solutions/bino_show.cpp)
 - [Combinations](./solutions/combinations.cpp)
 - [Robots on Ice](./solutions/robots_on_ice.cpp)
+- [E-Coins](./solutions/e_coins.cpp)
 
 Hidden
 - [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
