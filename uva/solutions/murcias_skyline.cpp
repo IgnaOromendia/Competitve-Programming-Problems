@@ -1,83 +1,86 @@
-// https://vjudge.net/problem/UVA-11790
-#include<vector>
-#include<iostream>
-#include<algorithm>
-#include<string>
+#include <iostream>
+#include <vector>
+#include <cstring>
+#include <algorithm>
+#include <math.h>
 
 using namespace std;
-using trends = pair<int, int>;
 
-const int INF = 1e9;
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vector<int> > mat;
+typedef pair<int,int> pi;
+typedef pair<double,double> pd;
+
+#define pb push_back
+#define mp make_pair
+
+#define forn(i,from,to) for (int i = from; i < to; i++)
+
+constexpr int INF  = 1e9;
+constexpr int mod  = 1e9 + 7;
+constexpr double PI = 3.14159265359;
 const string increasing = "Increasing";
 const string decreasing = "Decreasing";
 
-struct Building {
-    int height;
-    int width;
+int n;
+vi height, width;
+vector<vector<vector<pi> > > memo;
 
-    Building(int h ,int w) {height = h; width = w;}
-};
+pi trends(int i, int li, int ld) {
+    if (i == n) return mp(0, 0);
 
-int total_buildings = 0;
-vector<Building> buildings;
-vector<int> memo_inc;
-vector<int> memo_dec;
+    pi curr_trends;
+    int inc = 0, dec = 0;
 
-trends calculate_trend() {
-    int max_inc = 0;
-	int max_dec = 0;
+    if (memo[i][li][ld].first != -1 and memo[i][li][ld].second != -1) return memo[i][li][ld];
 
-	for(int i = 0; i < total_buildings; ++i) {
-        int current_width =  buildings[i].width;
-        int current_heigth =  buildings[i].height;
+    // Agregar el i-esimo edificio a la secuencia creciente
+    if (height[i] > height[li] or li == -1) inc = width[i] + trends(i+1, i, ld).first;
 
-        memo_inc[i] = current_width;
-        memo_dec[i] = current_width;
+    // Agregar el i-esimo edificio a la secuencia decreciente
+    if (height[i] < height[ld] or ld == -1) dec = width[i] + trends(i+1, li, i).second;
 
-        for(int j = 0; j < i; ++j){
-            int old_height = buildings[j].height;
-            if(old_height < current_heigth)
-                memo_inc[i] = max(memo_inc[i], memo_inc[j] + current_width);
-            if(current_heigth < old_height)
-                memo_dec[i] = max(memo_dec[i], memo_dec[j] + current_width);
-        }
+    // Salterar el i-esimo edificio
+    pi skip = trends(i+1, li, ld);
 
-        max_inc = max(max_inc, memo_inc[i]);
-        max_dec = max(max_dec, memo_dec[i]);
-    }
-
-    return make_pair(max_inc, max_dec);
+    return memo[i][li][ld] = mp(max(inc, skip.first), max(dec, skip.second));
 }
 
 void print_case(int case_number, int inc, int dec) {
     cout << "Case " << case_number << ". "  ;
-    if (inc >=  dec) cout << increasing << " (" << inc << "). " << decreasing << " (" << dec << ")." << endl;
-    else cout << decreasing << " (" << dec << "). " << increasing << " (" << inc << ")." << endl;
+    if (inc >=  dec) cout << increasing << " (" << inc << "). " << decreasing << " (" << dec << ").\n";
+    else cout << decreasing << " (" << dec << "). " << increasing << " (" << inc << ").\n";
 }
 
 int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
+
     int c; cin >> c;
     for(int t = 1; t <= c; t++) {
         
-        cin >> total_buildings;
+        cin >> n;
 
-        memo_dec.assign(total_buildings, 0);
-        memo_inc.assign(total_buildings, 0);
+        n+=2;
 
-        vector<int> heights(total_buildings, 0);
+        memo.assign(n, vector<vector<pi> >(n, vector<pi>(n, mp(-1,-1))));
+    
+        height.assign(n,0);
+        width.assign(n,0);
 
-        for(int i = 0; i < total_buildings; i++) cin >> heights[i];
+        height[0] = -1;
+        height[1] = INF;
+        width[0] = width[1] = 0;
 
-        for(int i = 0; i < total_buildings; i++) {
-            int w; cin >> w;
-            buildings.push_back(Building(heights[i],w));
-        }
+        forn(i,2,n) cin >> height[i];
 
-        trends building_trends = calculate_trend();
+        forn(i,2,n) cin >> width[i];
+
+        pi building_trends = trends(2,0,1);
 
         print_case(t, building_trends.first, building_trends.second);
 
-        buildings.clear();
     }
 
 }
