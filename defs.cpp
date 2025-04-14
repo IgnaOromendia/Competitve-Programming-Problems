@@ -1,12 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
-#include <algorithm>
-#include <math.h>
-#include <map>
-#include <queue>
-#include <sstream>
-#include <iomanip>
+#include <bitset>
 
 using namespace std;
 
