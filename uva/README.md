@@ -38,6 +38,8 @@
 - [Genosis](./solutions/genosis.cpp)
 - [Unlock the lock](./solutions/unlock_the_lock.cpp)
 - [Racing](./solutions/racing.cpp)
+- [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
+- [Down Went The Titanic](./solutions/titanic.cpp) TERMINAR
 
 ### Flow
 - [My T-shirt suits me](./solutions/tshirt.cpp)
@@ -85,8 +87,3 @@
 
 
 
-
-
-Hidden
-- [Lift Hopping](./solutions/lift_hopping.cpp) TERMINAR
-- [Down Went The Titanic](./solutions/titanic.cpp) TERMINAR
