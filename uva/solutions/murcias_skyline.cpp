@@ -25,27 +25,34 @@ const string decreasing = "Decreasing";
 
 int n;
 vi height, width;
-vector<vector<vector<pi> > > memo;
+mat memo_inc, memo_dec;
 
-pi trends(int i, int li, int ld) {
-    if (i == n) return mp(0, 0);
+int inc_trend(int i, int l) {
+    if (i == n) return 0;
 
-    pi curr_trends;
-    int inc = 0, dec = 0;
+    if (memo_inc[i][l] != -1) return memo_inc[i][l];
 
-    if (memo[i][li][ld].first != -1 and memo[i][li][ld].second != -1) return memo[i][li][ld];
+    int inc = 0;
 
     // Agregar el i-esimo edificio a la secuencia creciente
-    if (height[i] > height[li] or li == -1) inc = width[i] + trends(i+1, i, ld).first;
+    if (height[i] > height[l] or l == -1) inc = width[i] + inc_trend(i+1, i);
+
+    return memo_inc[i][l] = max(inc, inc_trend(i+1,l));
+}
+
+int dec_trend(int i, int l) {
+    if (i == n) return 0;
+
+    if (memo_dec[i][l] != -1) return memo_dec[i][l];
+
+    int dec = 0;
 
     // Agregar el i-esimo edificio a la secuencia decreciente
-    if (height[i] < height[ld] or ld == -1) dec = width[i] + trends(i+1, li, i).second;
+    if (height[i] < height[l] or l == -1) dec = width[i] + dec_trend(i+1, i);
 
-    // Salterar el i-esimo edificio
-    pi skip = trends(i+1, li, ld);
-
-    return memo[i][li][ld] = mp(max(inc, skip.first), max(dec, skip.second));
+    return memo_dec[i][l] = max(dec, dec_trend(i+1,l));
 }
+
 
 void print_case(int case_number, int inc, int dec) {
     cout << "Case " << case_number << ". "  ;
@@ -64,7 +71,8 @@ int main() {
 
         n+=2;
 
-        memo.assign(n, vector<vector<pi> >(n, vector<pi>(n, mp(-1,-1))));
+        memo_inc.assign(n, vi(n,-1));
+        memo_dec.assign(n, vi(n,-1));
     
         height.assign(n,0);
         width.assign(n,0);
@@ -77,9 +85,7 @@ int main() {
 
         forn(i,2,n) cin >> width[i];
 
-        pi building_trends = trends(2,0,1);
-
-        print_case(t, building_trends.first, building_trends.second);
+        print_case(t, inc_trend(2,0), dec_trend(2,1));
 
     }
 
