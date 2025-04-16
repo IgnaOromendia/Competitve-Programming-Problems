@@ -4,3 +4,4 @@
 - [Power grid](./solutions/power_grid.cpp) _MST with virtual node_
 - [Number of Paths](./solutions/number_of_paths.cpp)
 - [Dreamoon and Wifi](./solutions/dreamoon.cpp)
+- [Zero Path](./solutions/zero_path.cpp)
