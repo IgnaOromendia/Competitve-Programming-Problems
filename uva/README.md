@@ -14,6 +14,7 @@
 - [Combinations](./solutions/combinations.cpp)
 - [E-Coins](./solutions/e_coins.cpp)
 - [Murcia's Skyline](./solutions/murcias_skyline.cpp)
+- [Trouble of 13 Dots](./solutions/13dots.cpp)
 
 
 ### Greedy
