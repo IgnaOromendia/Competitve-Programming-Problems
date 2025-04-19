@@ -16,17 +16,26 @@ typedef pair<double,double> pd;
 #define forn(i,from,to) for (int i = from; i < to; i++)
 
 constexpr int INF  = 1e9;
-constexpr int MAXN = 100, MAXM = 10200;
+constexpr int MAXN = 101, MAXM = 10201;
 constexpr int mod  = 1e9 + 7;
 constexpr double PI = 3.14159265359;
 
 int price[MAXN], favour[MAXN], budget, n, memo[MAXN][MAXM];
 
 int knapsack(int i, int sum) {
+    // cout << sum << end l;
+
+    // Si se pasa del presupuesto y no podía llegar a tener un reembolso
+    if (sum > budget and budget <= 1800) return -INF;
+
+    // Si se pasa del presupesto + el posible reembolso
     if (sum > budget + 200) return -INF;
 
-    if (i == n and sum < budget + (sum > 2000 ? 200 : 0)) return 0;
-    if (i == n and sum > budget + (sum > 2000 ? 200 : 0)) return -INF;
+    // Caso base + preguntar si nos pasamos
+    if (i == n) {
+        // cout << sum << " ret: " << ((sum < 2000 and sum > budget) ? "-inf" : "0") << endl;
+        return (sum <= 2000 and sum > budget) ? -INF : 0;
+    }
 
     if (memo[i][sum] != -1) return memo[i][sum];
 
