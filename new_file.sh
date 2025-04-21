@@ -1,2 +1,2 @@
 #!/bin/bash
-cp defs.cpp "$1"
+cp defs.cpp "./solutions/$1.cpp"
