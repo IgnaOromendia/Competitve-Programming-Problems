@@ -37,7 +37,7 @@
 - [UVA 11790 - Murcia's Skyline](./solutions/murcias_skyline.cpp)
 - [UVA 10819 - Trouble of 13 Dots](./solutions/13dots.cpp)
 - [1695C - Zero Path](./solutions/zero_path.cpp)
-
+- [SPOJ BORW](./solutions/borw.cpp)
 
 
 ### Greedy
@@ -70,13 +70,17 @@
 - [CSES - Flight Routes Check](./solutions/flight_routes_check.cpp) _Strong components_
 - [CSES - Planets and Kingdoms](./solutions/planets_and_kingdoms.cpp) _Strong components_
 - [1000E - We Need More Bosses](./solutions/we_need_more_bosses.cpp) _Longest path in bridges on a graph_
+- [SPOJ BUGLIFE](./solutions/buglife.cpp)
+- [SPOJ CONGRAPH](./solutions/congraph.cpp)
+- [SPOJ DISGRAPH](./solutions/disgraph.cpp)
+- [SPOJ GRAFFDEFF](./solutions/graffdef.cpp)
 
 
 ##### BFS
 - [UVA 12160 - Unlock the lock](./solutions/unlock_the_lock.cpp)
 - [CSES - Labyrinth](./solutions/labyrinth.cpp) _BFS building the shortest path_
 - [CSES - Message Route](./solutions/message_route.cpp) _BFS shortest path_
-
+- [SPOJ COCONUTS](./solutions/coconuts.cpp)
 
 ##### MST
 - [UVA 572 - Oil deposit](./solutions/oil_deposit.cpp)
@@ -85,6 +89,7 @@
 - [CSES - Road Reparation](./solutions/road_reparation.cpp) _Kruskal_
 - [CSES - Road Construction](./solutions/road_construction.cpp) _DSU_
 - [1245D - Shichikuji and Power Grid](./solutions/power_grid.cpp) _MST with virtual node_
+- [SPOJ TRAFFICN](./solutions/trafficn.cpp)
 
 ##### SHORTEST PATH
 - [POJ 2253 - Frogger](./solutions/frogger.cpp)
@@ -125,6 +130,10 @@
 - [CSES - Dynamic Range Sum Queries](./solutions/dynamic_range_sum.cpp)
 - [CSES - Dynamic Range Min QUeries](./solutions/dynamic_range_min.cpp)
 
+
+### Divide & Conquer
+- [SPOJ AGGRESSIVE_COWS](./solutions/aggressive_cows.cpp)
+
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
 
@@ -140,6 +149,8 @@
 - [POJ 1005 - I Think I Need a Houseboat](./solutions/houseboat.cpp)
 - [POJ 1004 - Finanacial Mangements](./solutions/financial_mangement.cpp)
 - [POJ 3126 - Primes Path](./solutions/primes_path.cpp)
+- [SPOJ PALIN](./solutions/palin.cpp)
+- [SPOJ PRIME_GENRATOR](./solutions/prime_generator.cpp)
 
 ### Lists
 - [POJ 1552 - Doubles](./solutions/doubles.cpp)
