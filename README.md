@@ -53,6 +53,9 @@
 - [CSES - Ferris Wheel](./ferris_wheel.cpp)
 - [CSES - Concert Tickets](./concert_tickets.cpp)
 - [CSES - Restaurant Customers](./restaurant_customers.cpp)
+- [1342A - Road to Zero](./solutions/road_to_zero.cpp)
+- [1415A - Prison Break](./solutions/prision_break.cpp)
+- [1140A - Detective Book](/solutions/detective_book.cpp)
 
 ### Graph Algorithms
 #####  DFS
@@ -74,6 +77,7 @@
 - [SPOJ CONGRAPH](./solutions/congraph.cpp)
 - [SPOJ DISGRAPH](./solutions/disgraph.cpp)
 - [SPOJ GRAFFDEFF](./solutions/graffdef.cpp)
+- [No me acuerdo el nombre pero es de bipartitos](./solutions/bipartite_graph.cpp)
 
 
 ##### BFS
@@ -90,6 +94,7 @@
 - [CSES - Road Construction](./solutions/road_construction.cpp) _DSU_
 - [1245D - Shichikuji and Power Grid](./solutions/power_grid.cpp) _MST with virtual node_
 - [SPOJ TRAFFICN](./solutions/trafficn.cpp)
+- [160D - Edges in MST](./solutions/edges_in_mst.cpp)
 
 ##### SHORTEST PATH
 - [POJ 2253 - Frogger](./solutions/frogger.cpp)
@@ -133,6 +138,8 @@
 
 ### Divide & Conquer
 - [SPOJ AGGRESSIVE_COWS](./solutions/aggressive_cows.cpp)
+- [476B - Worms](./solutions/worms.cpp)
+- [782B - Meeting](./solutions/meeting.cpp)
 
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
