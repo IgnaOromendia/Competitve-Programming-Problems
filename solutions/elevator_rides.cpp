@@ -44,7 +44,14 @@ int main() {
         memo[S] = mp(INF, 0);
         
         // Por cada persona i me fijo que no haya subido y pruebo hacerlo subir
-        forn(i, 0, n) if (S & (1 << i)) {
+        // Mejora de implementación recorriendo solo los bits prendidos (reduce de 120ms a 60ms)
+        int P = S;
+        while(P) {
+            // Obtenemos el bit menos significativos prendido
+            int i = __builtin_ctz(P); 
+            // Hacemos un XOR para eliminar ese bit
+            P ^= (1 << i);  
+
             // Elimino a i de los que no viajaron todavía
             int S2 = S & ~(1 << i);
 
