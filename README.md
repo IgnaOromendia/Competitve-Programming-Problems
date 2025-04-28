@@ -38,7 +38,8 @@
 - [UVA 10819 - Trouble of 13 Dots](./solutions/13dots.cpp)
 - [1695C - Zero Path](./solutions/zero_path.cpp)
 - [SPOJ BORW](./solutions/borw.cpp)
-
+- [UVA 11951 - Area](./solutions/area.cpp)
+- [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
 
 ### Greedy
 - [POJ 1852 - Ants](./solutions/ants.cpp)
