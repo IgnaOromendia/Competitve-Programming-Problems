@@ -7,6 +7,7 @@ using namespace std;
 
 typedef long long ll;
 typedef vector<int> vi;
+typedef vector<ll> vl;
 typedef vector<vector<int> > mat;
 typedef pair<int,int> pi;
 typedef pair<double,double> pd;
