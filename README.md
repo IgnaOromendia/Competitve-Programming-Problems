@@ -25,7 +25,6 @@
 - [CSES - Two Sets II](./solutions/two_sets2.cpp)
 - [CSES - Increasing Subsequence](./solutions/inc_subseq.cpp)
 - [CSES - Projects](./solutions/projects.cpp)
-- [CSES - Elevator Rides](./solutions/elevator_rides.cpp)
 - [CSES - Counting Tilings](./solutions/counting_tilings.cpp) TO DO
 - [CSES - Counting Numbers](./solutions/counting_numbers.cpp) TO DO
 - [POJ 2793 - Sum of Consecutive Prime Numbers](./solutions/prime_consec_sum.cpp)
@@ -40,6 +39,7 @@
 - [SPOJ BORW](./solutions/borw.cpp)
 - [UVA 11951 - Area](./solutions/area.cpp)
 - [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
+- [CSES - Elevator Rides](./solutions/elevator_rides.cpp) TOP 2 VJUDGE XD
 
 ### Greedy
 - [POJ 1852 - Ants](./solutions/ants.cpp)
