@@ -40,6 +40,7 @@
 - [UVA 11951 - Area](./solutions/area.cpp)
 - [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
 - [CSES - Elevator Rides](./solutions/elevator_rides.cpp) TOP 2 VJUDGE XD
+- [Twenty Questions](./solutions/20questions.cpp) TERMINAR
 
 ### Greedy
 - [POJ 1852 - Ants](./solutions/ants.cpp)
