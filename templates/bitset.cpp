@@ -6,6 +6,9 @@ int x, i, b;
 
 int main() {
 
+    // Chequear si pertence
+    bool pertenece = S & (1 << x);
+
     // Agregar el elemento x
     S |= (1 << x);
 
