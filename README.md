@@ -40,7 +40,9 @@
 - [UVA 11951 - Area](./solutions/area.cpp)
 - [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
 - [CSES - Elevator Rides](./solutions/elevator_rides.cpp) TOP 2 VJUDGE XD
-- [Twenty Questions](./solutions/20questions.cpp) TERMINAR
+- [UVA 1252 - Twenty Questions](./solutions/20questions.cpp) TERMINAR
+- [UVA 11284 - Shopping Trip](./solutions/shopping_trip.cpp)
+- [UVA 1096 - The Islands](./solutions/theislands.cpp) TERMINAR
 
 ### Greedy
 - [POJ 1852 - Ants](./solutions/ants.cpp)
@@ -142,6 +144,7 @@
 - [SPOJ AGGRESSIVE_COWS](./solutions/aggressive_cows.cpp)
 - [476B - Worms](./solutions/worms.cpp)
 - [782B - Meeting](./solutions/meeting.cpp)
+- [UVA 12965 - Angry Bids](./solutions/angrybids.cpp)
 
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
