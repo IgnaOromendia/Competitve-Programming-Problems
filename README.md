@@ -61,6 +61,7 @@
 - [1415A - Prison Break](./solutions/prision_break.cpp)
 - [1140A - Detective Book](/solutions/detective_book.cpp)
 - [UVA 12321 - Gas Stations](./solutions/gasstations.cpp)
+- [UVA 13082 - High School Assembly](./solutions/highschoolsort.cpp)
 
 ### Graph Algorithms
 #####  DFS
