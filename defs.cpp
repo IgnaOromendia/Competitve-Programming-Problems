@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
-#include <cstring>
 #include <bitset>
+#include <algorithm>
 
 using namespace std;
 
