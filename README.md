@@ -60,6 +60,7 @@
 - [1342A - Road to Zero](./solutions/road_to_zero.cpp)
 - [1415A - Prison Break](./solutions/prision_break.cpp)
 - [1140A - Detective Book](/solutions/detective_book.cpp)
+- [UVA 12321 - Gas Stations](./solutions/gasstations.cpp)
 
 ### Graph Algorithms
 #####  DFS
@@ -145,6 +146,7 @@
 - [476B - Worms](./solutions/worms.cpp)
 - [782B - Meeting](./solutions/meeting.cpp)
 - [UVA 12965 - Angry Bids](./solutions/angrybids.cpp)
+- [UVA 11935 - Through the Desert](./solutions/desert.cpp)
 
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
