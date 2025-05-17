@@ -62,6 +62,7 @@
 - [1140A - Detective Book](/solutions/detective_book.cpp)
 - [UVA 12321 - Gas Stations](./solutions/gasstations.cpp)
 - [UVA 13082 - High School Assembly](./solutions/highschoolsort.cpp)
+- [UVA 11240 - Antimonotonicity](./solutions/antimono.cpp)
 
 ### Graph Algorithms
 #####  DFS
