@@ -36,10 +36,10 @@ void find_bridges() {
     visited.assign(n, false);
     tin.assign(n, -1);
     low.assign(n, -1);
-    forn(i, 0, n) {
+    forn(i, 0, n) 
         if (!visited[i])
             dfs(i);
-    }
+    
 }
 
 void dfs(int v, int p = -1) {
@@ -65,8 +65,8 @@ void find_cutpoints() {
     visited.assign(n, false);
     tin.assign(n, -1);
     low.assign(n, -1);
-    for (int i = 0; i < n; ++i) {
+    forn(i, 0, n)  
         if (!visited[i])
             dfs (i);
-    }
+    
 }
