@@ -85,6 +85,7 @@
 - [SPOJ DISGRAPH](./solutions/disgraph.cpp)
 - [SPOJ GRAFFDEFF](./solutions/graffdef.cpp)
 - [No me acuerdo el nombre pero es de bipartitos](./solutions/bipartite_graph.cpp)
+- [UVA 610 - Street Directions](./solutions/streetdirec.cpp)
 
 
 ##### BFS
