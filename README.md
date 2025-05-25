@@ -86,6 +86,7 @@
 - [SPOJ GRAFFDEFF](./solutions/graffdef.cpp)
 - [No me acuerdo el nombre pero es de bipartitos](./solutions/bipartite_graph.cpp)
 - [UVA 610 - Street Directions](./solutions/streetdirec.cpp)
+- [UVA 1108 - Mining Your Own Business](./solutions/myob.cpp)
 
 
 ##### BFS
