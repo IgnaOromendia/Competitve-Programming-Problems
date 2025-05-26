@@ -63,8 +63,7 @@ int dfs(int v, set<int>& cutPoints) {
     int nodes = 1;
     for(int to: adj[v]) {
         if (isCutPoint[to]) cutPoints.insert(to);
-        if (!visited[to] and !isCutPoint[to]) 
-            nodes += dfs(to, cutPoints);
+        if (!visited[to] and !isCutPoint[to]) nodes += dfs(to, cutPoints);
     }
         
     return nodes;
@@ -72,15 +71,14 @@ int dfs(int v, set<int>& cutPoints) {
 
 pair<ll, int> count_ways_shaft() {
     visited.assign(n, 0);
-    int shafts = 0;
+    int shafts = 0, nodes;
     ll ways = 1;
     set<int> cutPoints;
 
     forn(i,0,n)
         if (!visited[i] and !isCutPoint[i]) {
             cutPoints.clear();
-            int nodes = dfs(i, cutPoints);
-            // cout << i+1 << " " << cutPoints.size() << " " << nodes << endl;
+            nodes = dfs(i, cutPoints);
             if (cutPoints.size() == 1) {
                 shafts++;
                 ways *= nodes;
