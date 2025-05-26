@@ -4,50 +4,62 @@
 
 using namespace std;
 
-#define IMP "IMPOSSIBLE"
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vector<int> > mat;
+typedef pair<int,int> pi;
+typedef pair<double,double> pd;
+
 #define NOT_VISITED -1
 #define VISITING 0
 #define VISITED 1
 
-int n, m;
-vector<vector<int> > adj;
-vector<int> stack, state;
+#define pb push_back
+#define mp make_pair
+
+#define forn(i,from,to) for (int i = from; i < to; i++)
+
+constexpr int INF  = 1e9;
+constexpr int MAXN = 1e5 + 1;
+constexpr int mod  = 1e9 + 7;
+constexpr double PI = 3.14159265359;
+
+int n;
+mat adj;
+vi order, state;
 bool cycle = false;
 
 void dfs(int v) {
     state[v] = VISITING;
-    for(int u: adj[v]) {
+
+    for(int u: adj[v])
         if (state[u] == NOT_VISITED) dfs(u);
         else if (state[u] == VISITING) cycle = true;
-    }
-    stack.push_back(v);
+
+    order.pb(v);
     state[v] = VISITED;
 }
 
-void topological_sort() {
-    for(int i = 1; i <= n; i++)
-        if (state[i] == NOT_VISITED) dfs(i);
-    
-    reverse(stack.begin(), stack.end());
-}
-
 int main() {
-    cin >> n >> m;
+    int m; cin >> n >> m;
     
-    adj.assign(n+1, vector<int>());
-    state.assign(n+1, NOT_VISITED);
+    adj.assign(n, vector<int>());
+    state.assign(n, NOT_VISITED);
 
     while(m--) {
         int u, v; cin >> v >> u;
-        adj[v].push_back(u);
+        adj[v-1].pb(u-1);
     }
 
-    topological_sort();
+    // Topo sort
+    forn(i,0,n) 
+        if (state[i] == NOT_VISITED) 
+            dfs(i);
 
-    if (cycle) cout << IMP << endl;
+    if (cycle) cout << "IMPOSSIBLE" << endl;
     else {
-        for(int i = 0; i < n; i++) cout << stack[i] << " ";
-        cout << endl;
+        for(int i = n-1; i >= 0; i--) cout << order[i] + 1 << " ";
+        cout << "\n";
     }
         
 
