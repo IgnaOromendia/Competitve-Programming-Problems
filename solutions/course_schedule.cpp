@@ -41,10 +41,14 @@ void dfs(int v) {
 }
 
 int main() {
+    ios_base::sync_with_stdio(0);
+    cin.tie(NULL);
+
     int m; cin >> n >> m;
     
-    adj.assign(n, vector<int>());
-    state.assign(n, NOT_VISITED);
+    adj.resize(n);
+    state.resize(n, NOT_VISITED);
+    order.reserve(n);
 
     while(m--) {
         int u, v; cin >> v >> u;
