@@ -16,14 +16,14 @@ vector<vector<edge> > adj;
 vector<long long> dist;
 
 void sparseDijkstra(int s) {
-    priority_queue<pair<long long, int> > min_heap;
+    priority_queue<pair<long long, int> > heap;
     vector<bool> visited(adj.size(), false);
 
     dist[s] = 0;
-    min_heap.push(make_pair(0, s));
+    heap.push(make_pair(0, s));
 
-    while(!min_heap.empty()) {
-        int u = min_heap.top().second; min_heap.pop();
+    while(!heap.empty()) {
+        int u = heap.top().second; heap.pop();
 
         if(visited[u]) continue;
         visited[u] = true;
@@ -31,7 +31,7 @@ void sparseDijkstra(int s) {
         for(edge e: adj[u]) {
             if (dist[e.to] > dist[u] + e.cost) {
                 dist[e.to] = dist[u] + e.cost;
-                min_heap.push(make_pair(-dist[e.to], e.to));
+                heap.push(make_pair(-dist[e.to], e.to));
             }
         }
         
