@@ -13,13 +13,13 @@ struct edge {
 };
 
 vector<vector<edge> > adj;
-vector<long long> distances;
+vector<long long> dist;
 
-void dijkstra(int s) {
+void sparseDijkstra(int s) {
     priority_queue<pair<long long, int> > min_heap;
     vector<bool> visited(adj.size(), false);
 
-    distances[s] = 0;
+    dist[s] = 0;
     min_heap.push(make_pair(0, s));
 
     while(!min_heap.empty()) {
@@ -29,12 +29,37 @@ void dijkstra(int s) {
         visited[u] = true;
 
         for(edge e: adj[u]) {
-            if (distances[e.to] > distances[u] + e.cost) {
-                distances[e.to] = distances[u] + e.cost;
-                min_heap.push(make_pair(-distances[e.to], e.to));
+            if (dist[e.to] > dist[u] + e.cost) {
+                dist[e.to] = dist[u] + e.cost;
+                min_heap.push(make_pair(-dist[e.to], e.to));
             }
         }
         
     }
 
+}
+
+void denseDijkstra(int s) {
+    int n = adj.size();
+    vector<int> p(n, -1);
+    vector<bool> u(n, false);
+
+    dist[s] = 0;
+    for (int i = 0; i < n; i++) {
+        int v = -1;
+        for (int j = 0; j < n; j++) {
+            if (!u[j] && (v == -1 || dist[j] < dist[v]))
+                v = j;
+        }
+
+        if (dist[v] == INF) break;
+
+        u[v] = true;
+        for (auto e : adj[v]) {
+            if (dist[v] + e.cost < dist[e.to]) {
+                dist[e.to] = dist[v] + e.cost;
+                p[e.to] = v;
+            }
+        }
+    }
 }
