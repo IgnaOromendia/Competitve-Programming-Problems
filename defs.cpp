@@ -8,6 +8,7 @@ using namespace std;
 typedef long long ll;
 typedef vector<int> vi;
 typedef vector<vector<int> > mat;
+typedef vector<vector<int> > graph;
 typedef pair<int,int> pi;
 typedef pair<double,double> pd;
 
