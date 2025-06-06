@@ -87,7 +87,8 @@
 - [No me acuerdo el nombre pero es de bipartitos](./solutions/bipartite_graph.cpp)
 - [UVA 610 - Street Directions](./solutions/streetdirec.cpp)
 - [UVA 1108 - Mining Your Own Business](./solutions/myob.cpp)
-- [UVA 1229 - Mines](./solutions/mines.cpp)
+- [UVA 1263 - Mines](./solutions/mines.cpp)
+- [UVA 1229 - Sub-dictionary](./solutions/subdic.cpp)
 
 
 ##### BFS
@@ -152,6 +153,7 @@
 - [782B - Meeting](./solutions/meeting.cpp)
 - [UVA 12965 - Angry Bids](./solutions/angrybids.cpp)
 - [UVA 11935 - Through the Desert](./solutions/desert.cpp)
+- [UVA 10567 - Helping Fill Bates](./solutions/fillbates.cpp)
 
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
