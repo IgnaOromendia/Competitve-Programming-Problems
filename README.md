@@ -106,6 +106,7 @@
 - [1245D - Shichikuji and Power Grid](./solutions/power_grid.cpp) _MST with virtual node_
 - [SPOJ TRAFFICN](./solutions/trafficn.cpp)
 - [160D - Edges in MST](./solutions/edges_in_mst.cpp)
+- [UVA 11228 - Transportation System](./solutions/transportation_system.cpp)
 
 ##### SHORTEST PATH
 - [POJ 2253 - Frogger](./solutions/frogger.cpp)
