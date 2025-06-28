@@ -179,6 +179,9 @@
 ### Lists
 - [POJ 1552 - Doubles](./solutions/doubles.cpp)
 
+### Union Find
+- [UVA 10158 - War](./solutions/war.cpp)
+
 
 
 
