@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <cstring>
-#include <bitset>
+#include <climits>
 
 using namespace std;
 
@@ -21,7 +21,7 @@ typedef vector<tensor4D> tensor5D;
 #define forn(i,from,to) for (int i = from; i < to; i++)
 
 constexpr int INF  = 1e9;
-constexpr int MAXN = 20;
+constexpr int MAXN = 21;
 constexpr int mod  = 1e9 + 7;
 constexpr double PI = 3.14159265359;
 
@@ -30,8 +30,8 @@ ll garbage[MAXN][MAXN][MAXN];
 tensor5D sum;
 
 ll kadane(int f1, int f2, int c1, int c2) {
-    ll res = 0, curr = -1;
-    for(int z = 0; z < C; z++) {
+    ll res = LLONG_MIN, curr = 0;
+    forn(z, 0, C) {
         curr = max(sum[f1][f2][c1][c2][z], curr + sum[f1][f2][c1][c2][z]);
         res = max(curr, res);
     }
@@ -39,30 +39,16 @@ ll kadane(int f1, int f2, int c1, int c2) {
 }
 
 void compute_sums() {
-    
-    forn(z, 0, C) {
-        // Suma sobre columnas en rangos de filas
-        forn(c, 0 ,B) {
-            forn(f1, 0, A) 
-                forn(f2, f1, A) {
-                    if (f1 == f2) sum[f1][f2][c][c][z] = garbage[f2][c][z];
-                    else if (f1 == 0) sum[f1][f2][c][c][z] = sum[f1][f2-1][c][c][z] + garbage[f2][c][z];
-                    else sum[f1][f2][c][c][z] = sum[f1-1][f2][c][c][z] - sum[f1-1][f1-1][c][c][z];
-                }
-        }
+    forn(z, 0, C)
+        forn(f1, 0, A) forn(f2, f1, A)
+            forn(c1, 0, B) forn(c2, c1, B) {
+                ll total = 0;
+                forn(i, f1, f2+1) 
+                    forn(j, c1, c2+1)
+                        total += garbage[i][j][z];
 
-        // Suma sobre filas en rangos de columnas
-        forn(f, 0 ,A) {
-            forn(c1, 0, B) 
-                forn(c2, c1, B) {
-                    if (c1 == c2) sum[f][f][c1][c2][z] = garbage[f][c2][z];
-                    else if (c1 == 0) sum[f][f][c1][c2][z] = sum[f][f][c1][c2-1][z] + garbage[f][c2][z];
-                    else sum[f][f][c1][c2][z] = sum[f][f][c1-1][c2][z] - sum[f][f][c1-1][c2-1][z];
-                }
-        }
-
-
-    }
+                sum[f1][f2][c1][c2][z] = total;
+            }
 }
 
 int main() {
@@ -76,7 +62,7 @@ int main() {
 
         sum.assign(A, tensor4D(A, tensor(B, mat(B, vl(C)))));
 
-        ll max_heap = INT_MIN;
+        ll max_heap = LLONG_MIN;
 
         forn(z, 0, C)
             forn(x, 0 , A)
@@ -85,17 +71,18 @@ int main() {
                     max_heap = max(max_heap, garbage[x][y][z]);
                 }
                                   
-
         compute_sums();      
 
         forn(f1, 0, A) forn(f2, f1, A)
             forn(c1, 0, B) forn(c2, c1, B) {
-                ll heap = kadane(f1, f2, c1, c2);
-                if (heap == 0) continue;
-                max_heap = max(max_heap, heap);
+                ll curr_heap = kadane(f1, f2, c1, c2);
+                if (curr_heap == 0) continue;
+                max_heap = max(max_heap, curr_heap);
             }
 
-        cout << max_heap << "\n" << "\n";        
+        cout << max_heap << "\n";
+
+        if (t > 0) cout << "\n";
 
     }
 }
