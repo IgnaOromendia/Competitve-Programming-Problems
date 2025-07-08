@@ -124,6 +124,7 @@
 - [CSES - Coin Collector](./solutions/coin_collector.cpp) _DP in condensed strong components_
 - [UVA 558 - Wormholes](./solutions/wormholes.cpp)
 - [UVA 12144 - Almost Shortest Path](./solutions/almostSP.cpp)
+- [UVA 949 - Getaway](./solutions/getaway.cpp)
 
 ##### FLOW
 - [UVA 11045 - My T-shirt suits me](./solutions/tshirt.cpp)
