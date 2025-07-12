@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ -std=c++17 ./solutions/$1.cpp -o ./solutions/ejec;./solutions/ejec < ./solutions/test.dat
+g++ -std=c++17 -w ./solutions/$1.cpp -o ./solutions/ejec;./solutions/ejec < ./solutions/test.dat
