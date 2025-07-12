@@ -4,21 +4,29 @@
 
 using namespace std;
 
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<vector<int> > mat;
+typedef vector<vector<int> > graph;
+typedef pair<int,int> pi;
+typedef pair<double,double> pd;
+
+#define mp make_pair
+
 const int INF = 1e9;
 
 int n, m;
-vector<vector<long long> > capacity; 
-vector<vector<int> > net;
+mat capacity; 
+graph net;
 
-long long bfs(int s, int t, vector<int>& parent) {
+int bfs(int s, int t, vi& parent) {
     fill(parent.begin(), parent.end(), -1);
     parent[s] = -2;
-    queue<pair<int, long long> > q;
+    queue<pi > q;
     q.push(make_pair(s, INF));
 
     while (!q.empty()) {
-        int cur = q.front().first;
-        long long flow = q.front().second;
+        auto [cur, flow] = q.front();
         q.pop();
 
         for (int next : net[cur]) {
@@ -27,7 +35,7 @@ long long bfs(int s, int t, vector<int>& parent) {
                 long long new_flow = min(flow, capacity[cur][next]);
                 if (next == t)
                     return new_flow;
-                q.push(make_pair(next, new_flow));
+                q.push(mp(next, new_flow));
             }
         }
     }
@@ -36,9 +44,8 @@ long long bfs(int s, int t, vector<int>& parent) {
 }
 
 long long maxflow(int s, int t) {
-    long long flow = 0;
-    vector<int> parent(n+1);
-    long long new_flow;
+    int flow = 0, new_flow;
+    vi parent(n+1);
 
     while (new_flow = bfs(s, t, parent)) {
         flow += new_flow;
