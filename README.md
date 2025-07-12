@@ -134,6 +134,7 @@
 - [CSES - School Dance](./solutions/school_dance.cpp) _Matching_
 - [CSES - Distinct Routes](./solutions/distinct_routes.cpp) _Unsolved Longest disjoint paths_
 - [UVA 563 - Crimewave](./solutions/crimewave.cpp)
+- [UVA 10092 - The Problem with the Problem Setter](./solutions/probsetter.cpp)
 
 ##### OTHER
 - [CSES - Planet Queries I](./solutions/planet_queries_I.cpp) _Binary jumping in rho's graph_
