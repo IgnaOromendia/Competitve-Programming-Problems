@@ -22,8 +22,8 @@ graph net;
 int bfs(int s, int t, vi& parent) {
     fill(parent.begin(), parent.end(), -1);
     parent[s] = -2;
-    queue<pi > q;
-    q.push(make_pair(s, INF));
+    queue<pi> q;
+    q.push({s, INF});
 
     while (!q.empty()) {
         auto [cur, flow] = q.front();
@@ -32,10 +32,9 @@ int bfs(int s, int t, vi& parent) {
         for (int next : net[cur]) {
             if (parent[next] == -1 && capacity[cur][next]) {
                 parent[next] = cur;
-                long long new_flow = min(flow, capacity[cur][next]);
-                if (next == t)
-                    return new_flow;
-                q.push(mp(next, new_flow));
+                int new_flow = min(flow, capacity[cur][next]);
+                if (next == t) return new_flow;
+                q.push({next, new_flow});
             }
         }
     }
@@ -43,9 +42,9 @@ int bfs(int s, int t, vi& parent) {
     return 0;
 }
 
-long long maxflow(int s, int t) {
+int maxflow(int s, int t, int n) {
     int flow = 0, new_flow;
-    vi parent(n+1);
+    vi parent(n);
 
     while (new_flow = bfs(s, t, parent)) {
         flow += new_flow;
