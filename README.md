@@ -38,11 +38,12 @@
 - [1695C - Zero Path](./solutions/zero_path.cpp)
 - [SPOJ BORW](./solutions/borw.cpp)
 - [UVA 11951 - Area](./solutions/area.cpp)
-- [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
+- [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp)
 - [CSES - Elevator Rides](./solutions/elevator_rides.cpp) TOP 2 VJUDGE XD
 - [UVA 1252 - Twenty Questions](./solutions/20questions.cpp)
 - [UVA 11284 - Shopping Trip](./solutions/shopping_trip.cpp)
 - [UVA 1096 - The Islands](./solutions/theislands.cpp) TERMINAR
+- [UVA 1231 - ACORN](./solutions/acorn.cpp)
 
 ### Greedy
 - [POJ 1852 - Ants](./solutions/ants.cpp)
