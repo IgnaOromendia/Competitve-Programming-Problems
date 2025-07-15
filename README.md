@@ -40,7 +40,7 @@
 - [UVA 11951 - Area](./solutions/area.cpp)
 - [UVA 10755 - Garbage Heap](./solutions/garbage_heap.cpp) TERMINAR
 - [CSES - Elevator Rides](./solutions/elevator_rides.cpp) TOP 2 VJUDGE XD
-- [UVA 1252 - Twenty Questions](./solutions/20questions.cpp) TERMINAR
+- [UVA 1252 - Twenty Questions](./solutions/20questions.cpp)
 - [UVA 11284 - Shopping Trip](./solutions/shopping_trip.cpp)
 - [UVA 1096 - The Islands](./solutions/theislands.cpp) TERMINAR
 
