@@ -145,6 +145,7 @@
 - [CSES - De Brujin Sequence](./solutions/cses/) _Eulerian circuit_
 - [CSES - Teleporter Path](./solutions/teleporter_path.cpp) _Eulerian path_
 - [CSES - Hamilitonian Flights](./solutions/hamilitonian_flights.cpp) _Amount of Hamiltonian paths with bitmasking_
+- [UVA 12745 - Wishmaster](./solutions/wishmaster.cpp)
 
 ### Range queries
 
