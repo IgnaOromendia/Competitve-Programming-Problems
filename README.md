@@ -148,7 +148,6 @@
 - [UVA 12745 - Wishmaster](./solutions/wishmaster.cpp)
 
 ### Range queries
-
 - [CSES - Static Range Sum Queries](./solutions/static_range_sum.cpp)
 - [CSES - Static Range Minimum Queries](./solutions/static_range_min.cpp)
 - [CSES - Dynamic Range Sum Queries](./solutions/dynamic_range_sum.cpp)
@@ -162,6 +161,7 @@
 - [UVA 12965 - Angry Bids](./solutions/angrybids.cpp)
 - [UVA 11935 - Through the Desert](./solutions/desert.cpp)
 - [UVA 10567 - Helping Fill Bates](./solutions/fillbates.cpp)
+- [UVA 12524 - Arranging Heaps](./solutions/arrheaps.cpp)
 
 ### Number Representation
 - [POJ 1504 - Adding Reversed Numbers](./solutions/adding_rev_num.cpp)
