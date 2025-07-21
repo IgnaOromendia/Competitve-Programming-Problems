@@ -2,6 +2,7 @@
 #include <vector>
 #include <bitset>
 #include <algorithm>
+#include <cstring>
 
 using namespace std;
 
@@ -31,4 +32,5 @@ constexpr double PI = 3.14159265359;
 int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(NULL);
+    cout.tie(NULL);
 }
