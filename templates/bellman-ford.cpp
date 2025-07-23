@@ -6,6 +6,8 @@
 
 using namespace std;
 
+typedef vector<int> vi;
+
 struct edge {
     int from;
     int to;
@@ -18,8 +20,8 @@ vector<edge> edges;
 
 // Bellman Ford
 void bellman_ford() {
-    vector<long long> distances(n, INF);
-    vector<int> parents(n, -1);
+    vi distances(n, INF);
+    vi parents(n, -1);
     int x;
 
     for(int i = 0; i < n; i++) {
