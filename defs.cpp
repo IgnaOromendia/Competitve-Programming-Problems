@@ -16,7 +16,8 @@ typedef pair<double,double> pd;
 #define pb push_back
 #define mp make_pair
 
-#define forn(i,from,to) for (int i = from; i < to; i++)
+#define forn(i, from, to) for (int i = from; i < to; i++)
+#define rforn(i, from, to) for (int i = from; i >= to; i--)
 
 // Bitset
 #define contains(set, x) (set & (1 << x))
@@ -33,4 +34,5 @@ int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(NULL);
     cout.tie(NULL);
+    
 }
