@@ -90,7 +90,7 @@
 - [UVA 1108 - Mining Your Own Business](./solutions/myob.cpp)
 - [UVA 1263 - Mines](./solutions/mines.cpp)
 - [UVA 1229 - Sub-dictionary](./solutions/subdic.cpp)
-
+- [CSES - Planet Queries II](./solutions/planet_queries_II.cpp)
 
 ##### BFS
 - [UVA 12160 - Unlock the lock](./solutions/unlock_the_lock.cpp)
@@ -139,7 +139,6 @@
 
 ##### OTHER
 - [CSES - Planet Queries I](./solutions/planet_queries_I.cpp) _Binary jumping in rho's graph_
-- [CSES - Planet Queries II](./solutions/planet_queries_II.cpp) TO DO
 - [CSES - Giant Pizza](./solutions/giant_pizza.cpp) _Unsolved_ _2-SAT_
 - [CSES - Mail Delivery](./solutions/mail_delivery.cpp) _Eulerian cycle_
 - [CSES - De Brujin Sequence](./solutions/cses/) _Eulerian circuit_
